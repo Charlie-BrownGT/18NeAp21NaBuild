@@ -27,14 +27,14 @@ public:
 	virtual void ConstructSDandField();
 	
 private:
-	G4Material *worldMat, *vacuum, *LiTarget;
-	G4Element *Li;
+	G4Material *vacuum, *LiTarget, *YAPCe;
+	G4Element *Li, *Y, *Ce, *Al, *O;
 
-	G4VPhysicalVolume *physWorld, *physLi,*physSD;
-	G4LogicalVolume *logicWorld, *logicLi, *logicSD;
-	G4Box *solidWorld, *solidSD;
+	G4Box *solidWorld, *solidSD, *solidDD;
 	G4Tubs *solidLi;
-
+	G4VPhysicalVolume *physWorld, *physLi,*physSD, *physDD;
+	G4LogicalVolume *logicWorld, *logicLi, *logicSD, *logicDD;
+	
 	void DefineMaterials();
 };
 #endif
