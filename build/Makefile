@@ -222,6 +222,30 @@ src/Action.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/Action.cc.s
 .PHONY : src/Action.cc.s
 
+src/Detector.o: src/Detector.cc.o
+.PHONY : src/Detector.o
+
+# target to build an object file
+src/Detector.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/Detector.cc.o
+.PHONY : src/Detector.cc.o
+
+src/Detector.i: src/Detector.cc.i
+.PHONY : src/Detector.i
+
+# target to preprocess a source file
+src/Detector.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/Detector.cc.i
+.PHONY : src/Detector.cc.i
+
+src/Detector.s: src/Detector.cc.s
+.PHONY : src/Detector.s
+
+# target to generate assembly for a file
+src/Detector.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/Detector.cc.s
+.PHONY : src/Detector.cc.s
+
 src/DetectorConstruction.o: src/DetectorConstruction.cc.o
 .PHONY : src/DetectorConstruction.o
 
@@ -294,6 +318,30 @@ src/PhysicsList.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/PhysicsList.cc.s
 .PHONY : src/PhysicsList.cc.s
 
+src/Run.o: src/Run.cc.o
+.PHONY : src/Run.o
+
+# target to build an object file
+src/Run.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/Run.cc.o
+.PHONY : src/Run.cc.o
+
+src/Run.i: src/Run.cc.i
+.PHONY : src/Run.i
+
+# target to preprocess a source file
+src/Run.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/Run.cc.i
+.PHONY : src/Run.cc.i
+
+src/Run.s: src/Run.cc.s
+.PHONY : src/Run.s
+
+# target to generate assembly for a file
+src/Run.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/Run.cc.s
+.PHONY : src/Run.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -313,6 +361,9 @@ help:
 	@echo "... src/Action.o"
 	@echo "... src/Action.i"
 	@echo "... src/Action.s"
+	@echo "... src/Detector.o"
+	@echo "... src/Detector.i"
+	@echo "... src/Detector.s"
 	@echo "... src/DetectorConstruction.o"
 	@echo "... src/DetectorConstruction.i"
 	@echo "... src/DetectorConstruction.s"
@@ -322,6 +373,9 @@ help:
 	@echo "... src/PhysicsList.o"
 	@echo "... src/PhysicsList.i"
 	@echo "... src/PhysicsList.s"
+	@echo "... src/Run.o"
+	@echo "... src/Run.i"
+	@echo "... src/Run.s"
 .PHONY : help
 
 

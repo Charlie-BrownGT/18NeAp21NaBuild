@@ -32,6 +32,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 {	
 	G4double innerRadius = 0*cm, outerRadius = 5*cm, hz = 10*um, startAngle = 0.*deg, spanningAngle = 360.*deg;
 	G4ThreeVector LiTargetPos(0, 0, 0.5*m);
+	G4ThreeVector SDPos(0, 0, 0.99*m);
 
 	solidWorld = new G4Box("solidWorld", 0.5*m, 0.5*m, 1.*m);
 	logicWorld = new G4LogicalVolume(solidWorld, vacuum, "logicWorld");
@@ -41,8 +42,15 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	logicLi = new G4LogicalVolume(solidLi, LiTarget, "logicLi");
 	physLi = new G4PVPlacement(0, LiTargetPos, logicLi, "physLi", logicWorld, false, 0);
 
+	solidSD = new G4Box("solidSD", 0.5*m, 0.5*m, 0.01*m);
+	logicSD = new G4LogicalVolume(solidSD, vacuum, "logicSD");
+	physSD = new G4PVPlacement(0, SDPos, logicSD, "physSD", logicWorld, false, 0);
+	
 	return physWorld;
 }
 
 void MyDetectorConstruction::ConstructSDandField()
-{}
+{
+	MySensitiveDetector *sensSD = new MySensitiveDetector("SD");
+	logicSD->SetSensitiveDetector(sensSD);
+}

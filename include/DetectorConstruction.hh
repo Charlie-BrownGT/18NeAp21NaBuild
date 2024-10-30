@@ -15,6 +15,8 @@
 #include "G4GenericMessenger.hh"
 #include "globals.hh"
 
+#include "Detector.hh"
+
 class MyDetectorConstruction : public G4VUserDetectorConstruction
 {
 public:
@@ -33,7 +35,6 @@ private:
 	G4Box *solidWorld, *solidSD;
 	G4Tubs *solidLi;
 
-	
 	void DefineMaterials();
 };
 #endif
