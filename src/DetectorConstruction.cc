@@ -59,6 +59,9 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 
 void MyDetectorConstruction::ConstructSDandField()
 {
-	MySensitiveDetector *sensSD = new MySensitiveDetector("SD");
-	logicSD->SetSensitiveDetector(sensSD);
+	//MySensitiveDetector *sensSD = new MySensitiveDetector("SD");
+	//logicSD->SetSensitiveDetector(sensSD);
+
+	MySensitiveDetector *sensDD = new MySensitiveDetector("DD");
+	logicDD->SetSensitiveDetector(sensDD);
 }

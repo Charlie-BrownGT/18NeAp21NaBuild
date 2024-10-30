@@ -1,7 +1,7 @@
 CMakeFiles/sim.dir/src/DetectorConstruction.cc.o: \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild/src/DetectorConstruction.cc \
+ /home/guy/software/geant4/projects/18NeAp21NaBuild/src/DetectorConstruction.cc \
  /usr/include/stdc-predef.h \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild/include/DetectorConstruction.hh \
+ /home/guy/software/geant4/projects/18NeAp21NaBuild/include/DetectorConstruction.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4SystemOfUnits.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Units/SystemOfUnits.h \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VUserDetectorConstruction.hh \
@@ -360,7 +360,7 @@ CMakeFiles/sim.dir/src/DetectorConstruction.cc.o: \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UImessenger.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UIdirectory.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/globals.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild/include/Detector.hh \
+ /home/guy/software/geant4/projects/18NeAp21NaBuild/include/Detector.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VSensitiveDetector.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4CollectionNameVector.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4HCofThisEvent.hh \
