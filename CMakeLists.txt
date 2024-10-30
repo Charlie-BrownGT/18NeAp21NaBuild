@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16...3.17)
-project(diamondDetector)
+project(18NeAp21NaBuild)
 
 #build with ui and vis drivers on
 option(WITH_GEANT4_UIVIS "Build with Geant4 UI and Vis drivers" ON)
@@ -9,7 +9,7 @@ else()
 	find_package(Geant4 REQUIRED)
 endif()
 
-#include directories and comile definitions from Geant4
+#include directories and compile definitions from Geant4
 include(${Geant4_USE_FILE})
 
 #locate sources and headers for the project
