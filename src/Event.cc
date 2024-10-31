@@ -22,8 +22,8 @@ void MyEventAction::EndOfEventAction(const G4Event*)
 	man->FillNtupleDColumn(2, 0, DDEdep);
 	man->AddNtupleRow(2);
 
-	//man->FillNtupleDColumn(3, 0, SDEdep);
-	//man->AddNtupleRow(3);
+	man->FillNtupleDColumn(3, 0, SDEdep);
+	man->AddNtupleRow(3);
 }
 
 void MyEventAction::AddDDEdep(G4double DDedep){
