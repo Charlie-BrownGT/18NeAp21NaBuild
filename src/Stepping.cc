@@ -2,7 +2,7 @@
 
 MySteppingAction::MySteppingAction(MyEventAction *eventAction)
 {
-	fEventAction = eventAction;
+	DDEventAction = eventAction;
 }
 
 MySteppingAction::~MySteppingAction()
@@ -14,11 +14,11 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 	
 	const MyDetectorConstruction *detectorConstruction = static_cast<const MyDetectorConstruction*> (G4RunManager::GetRunManager()->GetUserDetectorConstruction());
 	
-	G4LogicalVolume *fScoringVolume = detectorConstruction->GetScoringVolume();
+	G4LogicalVolume *fScoringVolume = detectorConstruction->GetDDScoringVolume();
 	
 	if(volume != fScoringVolume)
 		return;
 	
-	G4double edep = step->GetTotalEnergyDeposit();
-	fEventAction->AddEdep(edep);
+	G4double DDedep = step->GetTotalEnergyDeposit();
+	DDEventAction->AddEdep(DDedep);
 }

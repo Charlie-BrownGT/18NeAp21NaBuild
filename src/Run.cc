@@ -16,8 +16,8 @@ MyRunAction::MyRunAction()
 	man->CreateNtupleDColumn("RunID");
 	man->FinishNtuple(1);
 
-	man->CreateNtuple("Scoring", "Scoring");
-	man->CreateNtupleDColumn("fEdep");
+	man->CreateNtuple("DDEnergy", "DDEnergy");
+	man->CreateNtupleDColumn("Energy");
 	man->FinishNtuple(2);
 }
 
@@ -36,7 +36,6 @@ void MyRunAction::EndOfRunAction(const G4Run* run)
     G4AnalysisManager *man = G4AnalysisManager::Instance();
 	
 	G4double runID = run->GetRunID();
-	G4cout << runID << G4endl;
 
     man->FillNtupleDColumn(1, 0, runID);
 	man->AddNtupleRow(1);

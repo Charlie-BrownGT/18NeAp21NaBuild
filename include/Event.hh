@@ -16,10 +16,10 @@ public:
 	virtual void BeginOfEventAction(const G4Event*);
 	virtual void EndOfEventAction(const G4Event*);
 	
-	void AddEdep(G4double edep) { fEdep += edep; }
+	void AddEdep(G4double DDedep);
 	
 private:
-	G4double fEdep;
+	G4double DDEdep;
 };
 
 #endif
