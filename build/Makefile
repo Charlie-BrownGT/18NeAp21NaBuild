@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/guy/software/geant4/projects/18NeAp21NaBuild
+CMAKE_SOURCE_DIR = /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/guy/software/geant4/projects/18NeAp21NaBuild/build
+CMAKE_BINARY_DIR = /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guy/software/geant4/projects/18NeAp21NaBuild/build/CMakeFiles /home/guy/software/geant4/projects/18NeAp21NaBuild/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild/build/CMakeFiles /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guy/software/geant4/projects/18NeAp21NaBuild/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -270,6 +270,30 @@ src/DetectorConstruction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/DetectorConstruction.cc.s
 .PHONY : src/DetectorConstruction.cc.s
 
+src/Event.o: src/Event.cc.o
+.PHONY : src/Event.o
+
+# target to build an object file
+src/Event.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/Event.cc.o
+.PHONY : src/Event.cc.o
+
+src/Event.i: src/Event.cc.i
+.PHONY : src/Event.i
+
+# target to preprocess a source file
+src/Event.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/Event.cc.i
+.PHONY : src/Event.cc.i
+
+src/Event.s: src/Event.cc.s
+.PHONY : src/Event.s
+
+# target to generate assembly for a file
+src/Event.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/Event.cc.s
+.PHONY : src/Event.cc.s
+
 src/Generator.o: src/Generator.cc.o
 .PHONY : src/Generator.o
 
@@ -342,6 +366,30 @@ src/Run.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/Run.cc.s
 .PHONY : src/Run.cc.s
 
+src/Stepping.o: src/Stepping.cc.o
+.PHONY : src/Stepping.o
+
+# target to build an object file
+src/Stepping.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/Stepping.cc.o
+.PHONY : src/Stepping.cc.o
+
+src/Stepping.i: src/Stepping.cc.i
+.PHONY : src/Stepping.i
+
+# target to preprocess a source file
+src/Stepping.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/Stepping.cc.i
+.PHONY : src/Stepping.cc.i
+
+src/Stepping.s: src/Stepping.cc.s
+.PHONY : src/Stepping.s
+
+# target to generate assembly for a file
+src/Stepping.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/Stepping.cc.s
+.PHONY : src/Stepping.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -367,6 +415,9 @@ help:
 	@echo "... src/DetectorConstruction.o"
 	@echo "... src/DetectorConstruction.i"
 	@echo "... src/DetectorConstruction.s"
+	@echo "... src/Event.o"
+	@echo "... src/Event.i"
+	@echo "... src/Event.s"
 	@echo "... src/Generator.o"
 	@echo "... src/Generator.i"
 	@echo "... src/Generator.s"
@@ -376,6 +427,9 @@ help:
 	@echo "... src/Run.o"
 	@echo "... src/Run.i"
 	@echo "... src/Run.s"
+	@echo "... src/Stepping.o"
+	@echo "... src/Stepping.i"
+	@echo "... src/Stepping.s"
 .PHONY : help
 
 

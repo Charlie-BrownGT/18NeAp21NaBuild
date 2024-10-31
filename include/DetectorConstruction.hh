@@ -23,6 +23,8 @@ public:
 	MyDetectorConstruction();
 	~MyDetectorConstruction();
 	
+	G4LogicalVolume *GetScoringVolume() const { return fScoringVolume; }
+
 	virtual G4VPhysicalVolume *Construct();
 	virtual void ConstructSDandField();
 	
@@ -34,6 +36,8 @@ private:
 	G4Tubs *solidLi;
 	G4VPhysicalVolume *physWorld, *physLi,*physSD, *physDD;
 	G4LogicalVolume *logicWorld, *logicLi, *logicSD, *logicDD;
+
+	G4LogicalVolume *fScoringVolume;
 	
 	void DefineMaterials();
 };

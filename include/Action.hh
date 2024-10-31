@@ -5,6 +5,8 @@
 
 #include "Generator.hh"
 #include "Run.hh"
+#include "Event.hh"
+#include "Stepping.hh"
 
 class MyActionInitialization : public G4VUserActionInitialization
 {

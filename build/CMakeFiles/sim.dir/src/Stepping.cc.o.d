@@ -1,15 +1,10 @@
-CMakeFiles/sim.dir/src/DetectorConstruction.cc.o: \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild/src/DetectorConstruction.cc \
+CMakeFiles/sim.dir/src/Stepping.cc.o: \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild/src/Stepping.cc \
  /usr/include/stdc-predef.h \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild/include/DetectorConstruction.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4SystemOfUnits.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Units/SystemOfUnits.h \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VUserDetectorConstruction.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/globals.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ios.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Types.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4GlobalConfig.hh \
- /usr/include/c++/11/complex \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild/include/Stepping.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UserSteppingAction.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Step.hh \
+ /usr/include/c++/11/cstdlib \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -20,32 +15,19 @@ CMakeFiles/sim.dir/src/DetectorConstruction.cc.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
- /usr/include/c++/11/pstl/pstl_config.h \
- /usr/include/c++/11/bits/cpp_type_traits.h \
- /usr/include/c++/11/ext/type_traits.h /usr/include/c++/11/cmath \
- /usr/include/math.h \
+ /usr/include/c++/11/pstl/pstl_config.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/time64.h \
- /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/floatn.h \
- /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/c++/11/bits/std_abs.h /usr/include/stdlib.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
  /usr/include/x86_64-linux-gnu/sys/types.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
@@ -68,6 +50,18 @@ CMakeFiles/sim.dir/src/DetectorConstruction.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/c++/11/bits/std_abs.h /usr/include/c++/11/cmath \
+ /usr/include/c++/11/bits/cpp_type_traits.h \
+ /usr/include/c++/11/ext/type_traits.h /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
  /usr/include/c++/11/bits/specfun.h \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/c++/11/bits/functexcept.h \
@@ -93,7 +87,11 @@ CMakeFiles/sim.dir/src/DetectorConstruction.cc.o: \
  /usr/include/c++/11/tr1/modified_bessel_func.tcc \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
- /usr/include/c++/11/tr1/riemann_zeta.tcc /usr/include/c++/11/sstream \
+ /usr/include/c++/11/tr1/riemann_zeta.tcc \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ios.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Types.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4GlobalConfig.hh \
+ /usr/include/c++/11/complex /usr/include/c++/11/sstream \
  /usr/include/c++/11/istream /usr/include/c++/11/ios \
  /usr/include/c++/11/iosfwd /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/memoryfwd.h /usr/include/c++/11/bits/postypes.h \
@@ -150,9 +148,8 @@ CMakeFiles/sim.dir/src/DetectorConstruction.cc.o: \
  /usr/include/c++/11/bits/stl_construct.h /usr/include/c++/11/string_view \
  /usr/include/c++/11/bits/functional_hash.h \
  /usr/include/c++/11/bits/string_view.tcc \
- /usr/include/c++/11/ext/string_conversions.h /usr/include/c++/11/cstdlib \
- /usr/include/c++/11/cstdio /usr/include/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+ /usr/include/c++/11/ext/string_conversions.h /usr/include/c++/11/cstdio \
+ /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
@@ -181,17 +178,27 @@ CMakeFiles/sim.dir/src/DetectorConstruction.cc.o: \
  /usr/include/c++/11/bits/istream.tcc \
  /usr/include/c++/11/bits/sstream.tcc \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/tls.hh \
- /usr/include/c++/11/iostream /usr/include/c++/11/algorithm \
- /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
- /usr/include/c++/11/bits/stl_algo.h \
+ /usr/include/c++/11/iostream /usr/include/c++/11/iomanip \
+ /usr/include/c++/11/locale \
+ /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/11/bits/locale_conv.h \
+ /usr/include/c++/11/bits/unique_ptr.h /usr/include/c++/11/utility \
+ /usr/include/c++/11/bits/stl_relops.h /usr/include/c++/11/tuple \
+ /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/bits/invoke.h \
+ /usr/include/c++/11/bits/quoted_string.h \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/globals.hh \
+ /usr/include/c++/11/algorithm /usr/include/c++/11/bits/stl_algo.h \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/uniform_int_dist.h \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
- /usr/include/c++/11/functional /usr/include/c++/11/tuple \
- /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
- /usr/include/c++/11/bits/invoke.h /usr/include/c++/11/bits/refwrap.h \
+ /usr/include/c++/11/functional /usr/include/c++/11/bits/refwrap.h \
  /usr/include/c++/11/bits/std_function.h \
  /usr/include/c++/11/unordered_map \
  /usr/include/c++/11/ext/aligned_buffer.h \
@@ -222,28 +229,20 @@ CMakeFiles/sim.dir/src/DetectorConstruction.cc.o: \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Exception.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ExceptionSeverity.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4EnvironmentUtils.hh \
- /usr/include/c++/11/iomanip /usr/include/c++/11/locale \
- /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \
- /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
- /usr/include/c++/11/bits/locale_facets_nonio.tcc \
- /usr/include/c++/11/bits/locale_conv.h \
- /usr/include/c++/11/bits/unique_ptr.h \
- /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/map \
- /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
+ /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h /usr/include/c++/11/mutex \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VPhysicalVolume.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/geomdefs.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4RotationMatrix.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ThreeVector.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Vector/ThreeVector.h \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Utility/defs.h \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Vector/ThreeVector.icc \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VPhysicalVolume.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/geomdefs.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4RotationMatrix.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Vector/Rotation.h \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Vector/RotationInterfaces.h \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Vector/LorentzVector.h \
@@ -254,6 +253,7 @@ CMakeFiles/sim.dir/src/DetectorConstruction.cc.o: \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Vector/RotationX.h \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Vector/RotationX.icc \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Units/PhysicalConstants.h \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Units/SystemOfUnits.h \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Vector/RotationY.h \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Vector/RotationY.icc \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Vector/RotationZ.h \
@@ -274,6 +274,32 @@ CMakeFiles/sim.dir/src/DetectorConstruction.cc.o: \
  /usr/include/c++/11/bits/std_thread.h /usr/include/c++/11/thread \
  /usr/include/c++/11/bits/this_thread_sleep.h \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VPhysicalVolume.icc \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4StepPoint.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Allocator.hh \
+ /usr/include/c++/11/cstddef \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4AllocatorPool.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4SteppingControl.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4StepStatus.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4TouchableHandle.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VTouchable.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4TouchableHistory.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4NavigationHistory.hh \
+ /usr/include/assert.h \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4AffineTransform.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Transform3D.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Geometry/Transform3D.h \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Geometry/Transform3D.icc \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Geometry/Point3D.h \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Geometry/Vector3D.h \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Geometry/Normal3D.h \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4AffineTransform.icc \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4NavigationLevel.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4NavigationLevelRep.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4NavigationLevelRep.icc \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4NavigationLevel.icc \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4NavigationHistoryPool.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4NavigationHistory.icc \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4LogicalVolume.hh \
  /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
@@ -283,36 +309,9 @@ CMakeFiles/sim.dir/src/DetectorConstruction.cc.o: \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Region.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Region.icc \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VPhysicalVolume.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4LogicalVolume.icc \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Box.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4GeomTypes.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4GeomConfig.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4CSGSolid.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VSolid.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VSolid.icc \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Polyhedron.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/HepPolyhedron.h \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4TwoVector.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Vector/TwoVector.h \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Vector/TwoVector.icc \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Point3D.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Geometry/Point3D.h \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Normal3D.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Geometry/Normal3D.h \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Transform3D.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Geometry/Transform3D.h \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Geometry/Transform3D.icc \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Geometry/Vector3D.h \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Visible.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Visible.icc \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Box.icc \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Tubs.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Tubs.icc \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4PVPlacement.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4NistManager.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ICRU90StoppingData.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4TouchableHistory.icc \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ReferenceCountedHandle.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Material.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Element.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ElementTable.hh \
@@ -339,54 +338,6 @@ CMakeFiles/sim.dir/src/DetectorConstruction.cc.o: \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4OrderedTable.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4DataVector.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4DataVector.icc \
- /usr/include/assert.h \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4NistElementBuilder.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4NistMaterialBuilder.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Pow.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Exp.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VisAttributes.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/graphics_reps_defs.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Colour.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Color.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VisAttributes.icc \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Colour.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4GenericMessenger.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4AnyMethod.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4AnyType.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UIcommand.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ApplicationState.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UIparameter.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UItokenNum.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UImessenger.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UIdirectory.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/globals.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild/include/Detector.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VSensitiveDetector.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4CollectionNameVector.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4HCofThisEvent.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Allocator.hh \
- /usr/include/c++/11/cstddef \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4AllocatorPool.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VHitsCollection.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Step.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4StepPoint.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4SteppingControl.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4StepStatus.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4TouchableHandle.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VTouchable.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4TouchableHistory.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4NavigationHistory.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4AffineTransform.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4AffineTransform.icc \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4NavigationLevel.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4NavigationLevelRep.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4NavigationLevelRep.icc \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4NavigationLevel.icc \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4NavigationHistoryPool.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4NavigationHistory.icc \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4LogicalVolume.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4TouchableHistory.icc \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ReferenceCountedHandle.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4StepPoint.icc \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4TrackVector.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Profiler.hh \
@@ -413,6 +364,58 @@ CMakeFiles/sim.dir/src/DetectorConstruction.cc.o: \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VUserTrackInformation.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4PhysicsModelCatalog.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Track.icc \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Step.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild/include/DetectorConstruction.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4SystemOfUnits.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VUserDetectorConstruction.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VPhysicalVolume.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4LogicalVolume.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Box.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4GeomTypes.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4GeomConfig.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4CSGSolid.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VSolid.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VSolid.icc \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Polyhedron.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/HepPolyhedron.h \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4TwoVector.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Vector/TwoVector.h \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Vector/TwoVector.icc \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Point3D.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Normal3D.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Visible.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Visible.icc \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Box.icc \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Tubs.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Tubs.icc \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4PVPlacement.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4NistManager.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ICRU90StoppingData.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4NistElementBuilder.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4NistMaterialBuilder.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Pow.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Exp.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VisAttributes.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/graphics_reps_defs.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Colour.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Color.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VisAttributes.icc \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Colour.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4GenericMessenger.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4AnyMethod.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4AnyType.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UIcommand.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ApplicationState.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UIparameter.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UItokenNum.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UImessenger.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UIdirectory.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/globals.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild/include/Detector.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VSensitiveDetector.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4CollectionNameVector.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4HCofThisEvent.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VHitsCollection.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VHit.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VReadOutGeometry.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4SensitiveVolumeList.hh \
@@ -600,4 +603,8 @@ CMakeFiles/sim.dir/src/DetectorConstruction.cc.o: \
  /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/list.tcc \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Run.hh \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UserRunAction.hh
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UserRunAction.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild/include/Event.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UserEventAction.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Event.hh \
+ /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild/include/Run.hh

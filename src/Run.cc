@@ -15,6 +15,10 @@ MyRunAction::MyRunAction()
     man->CreateNtuple("RunID", "RunID");
 	man->CreateNtupleDColumn("RunID");
 	man->FinishNtuple(1);
+
+	man->CreateNtuple("Scoring", "Scoring");
+	man->CreateNtupleDColumn("fEdep");
+	man->FinishNtuple(2);
 }
 
 MyRunAction::~MyRunAction()
