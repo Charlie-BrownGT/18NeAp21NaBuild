@@ -21,5 +21,4 @@ public:
 private:
 	G4double DDEdep;
 };
-
 #endif

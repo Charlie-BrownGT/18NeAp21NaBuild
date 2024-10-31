@@ -36,7 +36,6 @@ void MyRunAction::EndOfRunAction(const G4Run* run)
     G4AnalysisManager *man = G4AnalysisManager::Instance();
 	
 	G4double runID = run->GetRunID();
-
     man->FillNtupleDColumn(1, 0, runID);
 	man->AddNtupleRow(1);
 

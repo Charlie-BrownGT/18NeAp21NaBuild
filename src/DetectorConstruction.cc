@@ -55,14 +55,15 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	physDD = new G4PVPlacement(0, DDPos, logicDD, "physDD", logicWorld, false, 0);
 	
 	DDEnergyScoringVol = logicDD;
+	SDEnergyScoringVol = logicSD;
 
 	return physWorld;
 }
 
 void MyDetectorConstruction::ConstructSDandField()
 {
-	//MySensitiveDetector *sensSD = new MySensitiveDetector("SD");
-	//logicSD->SetSensitiveDetector(sensSD);
+	MySensitiveDetector *sensSD = new MySensitiveDetector("SD");
+	logicSD->SetSensitiveDetector(sensSD);
 
 	MySensitiveDetector *sensDD = new MySensitiveDetector("DD");
 	logicDD->SetSensitiveDetector(sensDD);
