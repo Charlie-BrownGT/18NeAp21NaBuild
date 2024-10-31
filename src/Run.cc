@@ -19,6 +19,10 @@ MyRunAction::MyRunAction()
 	man->CreateNtuple("DDEnergy", "DDEnergy");
 	man->CreateNtupleDColumn("Energy");
 	man->FinishNtuple(2);
+
+	man->CreateNtuple("SDEnergy", "SDEnergy");
+	man->CreateNtupleDColumn("Energy");
+	man->FinishNtuple(3);
 }
 
 MyRunAction::~MyRunAction()

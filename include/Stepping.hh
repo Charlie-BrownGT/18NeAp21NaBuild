@@ -17,6 +17,7 @@ public:
 
 private:
 	MyEventAction *DDEventAction;
+    MyEventAction *SDEventAction;
 };
 
 #endif
