@@ -17,9 +17,6 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 	G4LogicalVolume *DDScoringVolume = detectorConstruction->GetDDScoringVolume();
 	G4LogicalVolume *SDScoringVolume = detectorConstruction->GetSDScoringVolume();
 	
-	//if(volume != DDScoringVolume)
-	//	return;
-	
 	G4double DDedep = step->GetTotalEnergyDeposit();
 	DDEventAction->AddDDEdep(DDedep);
 

@@ -54,6 +54,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	logicDD = new G4LogicalVolume(solidDD, YAPCe, "logicDD");
 	physDD = new G4PVPlacement(0, DDPos, logicDD, "physDD", logicWorld, false, 0);
 	
+	//defining the scoring volumes used for the energy deposition
 	DDEnergyScoringVol = logicDD;
 	SDEnergyScoringVol = logicSD;
 
