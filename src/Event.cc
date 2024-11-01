@@ -27,14 +27,13 @@ void MyEventAction::EndOfEventAction(const G4Event*)
 }
 
 void MyEventAction::AddDDEdep(G4double DDedep){
-	if(DDedep > 100){
+	//if(DDedep > 100){
 		DDEdep += DDedep;
-	}
+	//}
 }
 
 void MyEventAction::AddSDEdep(G4double SDedep){
-	if(SDedep < 100){
+	//if(SDedep < 100){
 		SDEdep += SDedep;
-		//G4cout << "SDEdep = " << SDedep << G4endl;
-	}
+	//}
 }
