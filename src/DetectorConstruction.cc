@@ -40,19 +40,19 @@ namespace B3
   {
     G4NistManager* nist = G4NistManager::Instance();
 
-    auto solidWorld = new G4Box("World", 1.*m, 1.*m, 2.*m);
+    auto solidWorld = new G4Box("World", 1.*m, 1.*m, 3.*m);
     auto logicWorld = new G4LogicalVolume(solidWorld, vacuum, "World");
     auto physWorld = new G4PVPlacement(nullptr, G4ThreeVector(), logicWorld, "World", nullptr, false, 0, fCheckOverlaps);                          
 
     // define crystal, used as a detector later
-    G4ThreeVector crystPos(0, 0, 0.5*m);
-    auto solidCryst = new G4Box("crystal", 10.*cm, 10.*cm, 0.5*mm);
+    G4ThreeVector crystPos(0, 0, 1.*m);
+    auto solidCryst = new G4Box("crystal", 1.*cm, 1.*cm, 0.5*mm);
     auto logicCryst = new G4LogicalVolume(solidCryst, YAPCe, "CrystalLV");
     new G4PVPlacement(nullptr, crystPos, logicCryst, "crystal", logicWorld, false, 0, fCheckOverlaps);
 
     // patient, used as a detector later
-    G4double IDinnerRadius = 0*cm, IDouterRadius = 30*cm, IDhz = 20*cm, IDstartAngle = 0.*deg, IDspanningAngle = 360.*deg;
-    G4ThreeVector IDPos(0, 0, 0.75*m);
+    G4double IDinnerRadius = 0*cm, IDouterRadius = 90*cm, IDhz = 20*cm, IDstartAngle = 0.*deg, IDspanningAngle = 360.*deg;
+    G4ThreeVector IDPos(0, 0, 1.25*m);
     auto solidID = new G4Tubs("ID", IDinnerRadius, IDouterRadius, IDhz, IDstartAngle, IDspanningAngle);
     auto logicID = new G4LogicalVolume(solidID, CF4, "IDLV");                                        
     new G4PVPlacement(nullptr, IDPos, logicID, "ID", logicWorld, false, 0, fCheckOverlaps);          
@@ -70,14 +70,14 @@ namespace B3
     // declare crystal as a MultiFunctionalDetector scorer
     auto cryst = new G4MultiFunctionalDetector("crystal");
     G4SDManager::GetSDMpointer()->AddNewDetector(cryst);
-    G4VPrimitiveScorer* primitiv1 = new G4PSEnergyDeposit("edep");
+    G4VPrimitiveScorer* primitiv1 = new G4PSEnergyDeposit("crystEdep");
     cryst->RegisterPrimitive(primitiv1);
     SetSensitiveDetector("CrystalLV",cryst);
 
     // declare IonDet as a MultiFunctionalDetector scorer
     auto IonDet = new G4MultiFunctionalDetector("IonDet");
     G4SDManager::GetSDMpointer()->AddNewDetector(IonDet);
-    G4VPrimitiveScorer* primitiv2 = new G4PSDoseDeposit("dose");
+    G4VPrimitiveScorer* primitiv2 = new G4PSEnergyDeposit("IDEdep");
     IonDet->RegisterPrimitive(primitiv2);
     SetSensitiveDetector("IDLV",IonDet);
   }

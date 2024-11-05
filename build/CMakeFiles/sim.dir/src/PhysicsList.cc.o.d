@@ -1,7 +1,7 @@
 CMakeFiles/sim.dir/src/PhysicsList.cc.o: \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/PhysicsList.cc \
+ /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/PhysicsList.cc \
  /usr/include/stdc-predef.h \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/include/PhysicsList.hh \
+ /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/include/PhysicsList.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VModularPhysicsList.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VPhysicsConstructor.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ParticleTable.hh \
