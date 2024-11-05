@@ -1,5 +1,4 @@
 /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build/CMakeFiles/sim.dir
-/home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build/CMakeFiles/B3a.dir
 /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build/CMakeFiles/edit_cache.dir
 /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build/CMakeFiles/rebuild_cache.dir
 /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build/CMakeFiles/list_install_components.dir

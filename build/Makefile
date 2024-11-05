@@ -174,19 +174,6 @@ sim/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/build
 .PHONY : sim/fast
 
-#=============================================================================
-# Target rules for targets named B3a
-
-# Build rule for target.
-B3a: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 B3a
-.PHONY : B3a
-
-# fast build rule for target.
-B3a/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/B3a.dir/build.make CMakeFiles/B3a.dir/build
-.PHONY : B3a/fast
-
 sim.o: sim.cc.o
 .PHONY : sim.o
 
@@ -391,7 +378,6 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... B3a"
 	@echo "... sim"
 	@echo "... sim.o"
 	@echo "... sim.i"

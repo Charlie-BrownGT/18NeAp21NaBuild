@@ -7,21 +7,17 @@
 
 namespace B3a
 {
+  class RunAction : public G4UserRunAction
+  {
+    public:
+      RunAction();
+      ~RunAction() override = default;
 
-/// Run action class
+      void BeginOfRunAction(const G4Run*) override;
+      void EndOfRunAction(const G4Run*) override;
 
-class RunAction : public G4UserRunAction
-{
-  public:
-    RunAction();
-    ~RunAction() override = default;
-
-    void BeginOfRunAction(const G4Run*) override;
-    void EndOfRunAction(const G4Run*) override;
-
-private:
-};
-
+  private:
+  };
 }
 #endif
 

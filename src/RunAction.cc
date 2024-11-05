@@ -11,7 +11,6 @@ using namespace B3;
 
 namespace B3a
 {
-
   RunAction::RunAction()
   {}
 

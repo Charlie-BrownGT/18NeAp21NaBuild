@@ -1,0 +1,13 @@
+/run/numberOfThreads 4
+/run/initialize
+/control/verbose 2
+
+/score/ntuple/writerFileName test
+/run/beamOn 40000
+
+# change beta source
+#/gun/particle ion
+#/gun/ion 6 11
+#/analysis/setFileName scoring2
+#/run/printProgress 10000
+#/run/beamOn 40000

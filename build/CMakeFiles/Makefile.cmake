@@ -22,17 +22,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/lib/cmake/Geant4/PTL/PTLTargets.cmake"
   "/home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/lib/cmake/Geant4/UseGeant4.cmake"
   "../CMakeLists.txt"
-  "../beam.mac"
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
-  "../debug.mac"
-  "../exampleB3.in"
-  "../exampleB3.out"
-  "../init_vis.mac"
-  "../run1.mac"
-  "../run2.mac"
-  "../vis.mac"
   "/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfig.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtras.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake"
@@ -116,19 +108,10 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "debug.mac"
-  "exampleB3.in"
-  "exampleB3.out"
-  "init_vis.mac"
-  "run1.mac"
-  "run2.mac"
-  "vis.mac"
-  "beam.mac"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/sim.dir/DependInfo.cmake"
-  "CMakeFiles/B3a.dir/DependInfo.cmake"
   )
