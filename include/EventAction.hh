@@ -7,30 +7,27 @@
 namespace B3a
 {
 
-class RunAction;
+  class RunAction;
 
-/// Event action class
-///
-/// In EndOfEventAction() there is collected information event per event
-/// from Hits Collections, and accumulated statistic for
-/// RunAction::EndOfRunAction().
+  /// Event action class
+  ///
+  /// In EndOfEventAction() there is collected information event per event
+  /// from Hits Collections, and accumulated statistic for
+  /// RunAction::EndOfRunAction().
 
-class EventAction : public G4UserEventAction
-{
-  public:
-    EventAction(RunAction* runAction);
-    ~EventAction() override = default;
+  class EventAction : public G4UserEventAction
+  {
+    public:
+      EventAction(RunAction* runAction);
+      ~EventAction() override = default;
 
-    void  BeginOfEventAction(const G4Event*) override;
-    void  EndOfEventAction(const G4Event*) override;
+      void  BeginOfEventAction(const G4Event*) override;
+      void  EndOfEventAction(const G4Event*) override;
 
-  private:
-    RunAction* fRunAction = nullptr;
-    G4int fCollID_cryst = -1;
-    G4int fCollID_patient = -1;
-};
-
+    private:
+      RunAction* fRunAction = nullptr;
+      G4int fCollID_cryst = -1;
+      G4int fCollID_IonDet = -1;
+  };
 }
 #endif
-
-

@@ -75,12 +75,12 @@ namespace B3
     cryst->RegisterPrimitive(primitiv1);
     SetSensitiveDetector("CrystalLV",cryst);
 
-    // declare patient as a MultiFunctionalDetector scorer
-    auto patient = new G4MultiFunctionalDetector("patient");
-    G4SDManager::GetSDMpointer()->AddNewDetector(patient);
+    // declare IonDet as a MultiFunctionalDetector scorer
+    auto IonDet = new G4MultiFunctionalDetector("IonDet");
+    G4SDManager::GetSDMpointer()->AddNewDetector(IonDet);
     G4VPrimitiveScorer* primitiv2 = new G4PSDoseDeposit("dose");
-    patient->RegisterPrimitive(primitiv2);
-    SetSensitiveDetector("IDLV",patient);
+    IonDet->RegisterPrimitive(primitiv2);
+    SetSensitiveDetector("IDLV",IonDet);
   }
 }
 

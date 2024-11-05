@@ -25,32 +25,23 @@ class G4LogicalVolume;
 
 namespace B3
 {
+  class DetectorConstruction : public G4VUserDetectorConstruction
+  {
+    public:
+      DetectorConstruction();
+      ~DetectorConstruction() override = default;
 
-/// Detector construction class to define materials and geometry.
-///
-/// Crystals are positioned in Ring, with an appropriate rotation matrix.
-/// Several copies of Ring are placed in the full detector.
+    public:
+      G4VPhysicalVolume* Construct() override;
+      void ConstructSDandField() override;
 
-class DetectorConstruction : public G4VUserDetectorConstruction
-{
-  public:
-    DetectorConstruction();
-    ~DetectorConstruction() override = default;
+    private:
+      void DefineMaterials();
 
-  public:
-    G4VPhysicalVolume* Construct() override;
-    void ConstructSDandField() override;
+      G4Material *vacuum, *CF4, *LiTarget, *YAPCe;
+      G4Element *Li, *Y, *Ce, *Al, *O, *C, *F;
 
-  private:
-    void DefineMaterials();
-
-    G4Material *vacuum, *CF4, *LiTarget, *YAPCe;
-    G4Element *Li, *Y, *Ce, *Al, *O, *C, *F;
-
-    G4bool fCheckOverlaps = true;
-};
-
+      G4bool fCheckOverlaps = true;
+  };
 }
-
 #endif
-
