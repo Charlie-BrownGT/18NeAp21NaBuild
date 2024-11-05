@@ -5,6 +5,10 @@
 #include "G4Accumulable.hh"
 #include "globals.hh"
 
+#include "G4AnalysisManager.hh"
+#include "G4Run.hh"
+#include "G4GenericMessenger.hh"
+
 namespace B3a
 {
   class RunAction : public G4UserRunAction
