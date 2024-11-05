@@ -1,5 +1,4 @@
 /run/verbose 2
-/run/numberOfThreads 4
 /run/initialize
 /control/execute vis.mac
 /vis/open
@@ -28,6 +27,20 @@
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
 /vis/verbose warnings
-/run/beamOn 1
+/control/execute beam.mac
+/gps/particle ion
+/gps/energy 126 MeV
+/gps/ion 10 18 10 0
+/gps/pos/centre 0 0 0
+/gps/direction 0 0 1
+/gps/ang/type planar
+/gps/pos/type Beam
+/gps/pos/rot1 1 0 0
+/gps/pos/rot2 0 1 0
+/gps/ang/rot1 0 1 0
+/gps/ang/rot2 1 0 0
+/gps/ang/type beam1d
+/gps/ang/sigma_r 1. deg
+/run/beamOn 100
 /analysis/h1/getVector
 /analysis/h2/getVector

@@ -1,6 +1,8 @@
-/run/numberOfThreads 4
-/run/initialize
-/control/verbose 2
+#/run/numberOfThreads 4
+#/run/initialize
+#/control/verbose 2
 
-/score/ntuple/writerFileName output
-/run/beamOn 400
+#/score/ntuple/writerFileName output
+
+#/control/execute beam.mac
+/run/beamOn 40000
