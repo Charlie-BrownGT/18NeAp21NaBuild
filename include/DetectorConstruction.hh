@@ -44,8 +44,8 @@ class DetectorConstruction : public G4VUserDetectorConstruction
   private:
     void DefineMaterials();
 
-    G4Material *vacuum, *LiTarget, *YAPCe;
-    G4Element *Li, *Y, *Ce, *Al, *O;
+    G4Material *vacuum, *CF4, *LiTarget, *YAPCe;
+    G4Element *Li, *Y, *Ce, *Al, *O, *C, *F;
 
     G4bool fCheckOverlaps = true;
 };
