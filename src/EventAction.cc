@@ -12,23 +12,12 @@
 
 namespace B3a
 {
-
-  EventAction::EventAction(RunAction* runAction)
-  : fRunAction(runAction)
+  EventAction::EventAction(RunAction* runAction) : fRunAction(runAction)
   {}
 
   void EventAction::BeginOfEventAction(const G4Event* /*evt*/)
   {}
 
   void EventAction::EndOfEventAction(const G4Event* evt )
-  {
-    //Hits collections
-    G4HCofThisEvent* HCE = evt->GetHCofThisEvent();
-    if(!HCE) return;
-
-    // Get hits collections IDs
-    G4SDManager* SDMan = G4SDManager::GetSDMpointer();
-    fCollID_cryst   = SDMan->GetCollectionID("crystal/edep");
-    fCollID_IonDet = SDMan->GetCollectionID("IonDet/dose");
-  }
+  {}
 }

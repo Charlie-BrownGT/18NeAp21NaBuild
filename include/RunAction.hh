@@ -19,12 +19,7 @@ class RunAction : public G4UserRunAction
     void BeginOfRunAction(const G4Run*) override;
     void EndOfRunAction(const G4Run*) override;
 
-    void CountEvent()           { fGoodEvents += 1; };
-    void SumDose(G4double dose) { fSumDose += dose; };
-
 private:
-    G4Accumulable<G4int>    fGoodEvents = 0;
-    G4Accumulable<G4double> fSumDose = 0.;
 };
 
 }

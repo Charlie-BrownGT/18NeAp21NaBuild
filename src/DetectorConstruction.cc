@@ -2,7 +2,6 @@
 
 namespace B3
 {
-
   DetectorConstruction::DetectorConstruction()
   {
     DefineMaterials();

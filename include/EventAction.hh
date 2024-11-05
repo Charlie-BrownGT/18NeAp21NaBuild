@@ -10,7 +10,6 @@ namespace B3a
   class RunAction;
 
   /// Event action class
-  ///
   /// In EndOfEventAction() there is collected information event per event
   /// from Hits Collections, and accumulated statistic for
   /// RunAction::EndOfRunAction().
@@ -26,8 +25,6 @@ namespace B3a
 
     private:
       RunAction* fRunAction = nullptr;
-      G4int fCollID_cryst = -1;
-      G4int fCollID_IonDet = -1;
   };
 }
 #endif
