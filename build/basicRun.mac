@@ -5,4 +5,5 @@
 #/score/ntuple/writerFileName output
 
 #/control/execute beam.mac
+/score/ntuple/writerFileName output
 /run/beamOn 100000
