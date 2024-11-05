@@ -2,5 +2,5 @@
 /run/initialize
 /control/verbose 2
 
-/score/ntuple/writerFileName test
-/run/beamOn 40000
+/score/ntuple/writerFileName output
+/run/beamOn 400

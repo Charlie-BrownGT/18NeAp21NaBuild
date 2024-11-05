@@ -19,23 +19,16 @@ int main(int argc,char** argv)
   G4UIExecutive* ui = nullptr;
   if ( argc == 1 ) { ui = new G4UIExecutive(argc, argv);}
 
-  //use G4SteppingVerboseWithUnits
   G4int precision = 4;
   G4SteppingVerbose::UseBestUnit(precision);
 
-  // Construct the default run manager
-  //
-  auto runManager =
-    G4RunManagerFactory::CreateRunManager(G4RunManagerType::Default);
+  auto runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Default);
 
-  // Set mandatory initialization classes
   runManager->SetUserInitialization(new B3::DetectorConstruction);
   runManager->SetUserInitialization(new B3::PhysicsList);
 
-  // Set user action initialization
   runManager->SetUserInitialization(new B3a::ActionInitialization());
 
-  // Initialize visualization
   auto visManager = new G4VisExecutive;
   
   visManager->Initialize();
@@ -52,17 +45,17 @@ int main(int argc,char** argv)
     // Note: merging ntuples is available only with Root output
     // (the default in G4TScoreNtupleWriter)
 
-  if ( ! ui ) {
-    //UImanager->ApplyCommand("/control/execute beam.mac");
-    G4String command = "/control/execute ";
-    G4String fileName = argv[1];
-    UImanager->ApplyCommand(command+fileName);
-  }
-  else {
+  if (ui) {
     UImanager->ApplyCommand("/control/execute init_vis.mac");
     //UImanager->ApplyCommand("/control/execute beam.mac");
     ui->SessionStart();
     delete ui;
+  }
+  else {
+    //UImanager->ApplyCommand("/control/execute beam.mac");
+    G4String command = "/control/execute ";
+    G4String fileName = argv[1];
+    UImanager->ApplyCommand(command+fileName);
   }
 
   delete visManager;

@@ -1,4 +1,5 @@
 /run/verbose 2
+/run/numberOfThreads 4
 /run/initialize
 /control/execute vis.mac
 /vis/open
@@ -27,3 +28,6 @@
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
 /vis/verbose warnings
+/run/beamOn 1
+/analysis/h1/getVector
+/analysis/h2/getVector
