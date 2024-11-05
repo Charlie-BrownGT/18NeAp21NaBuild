@@ -12,84 +12,37 @@ using namespace B3;
 namespace B3a
 {
 
-RunAction::RunAction()
-{
-  //add new units for dose
-  //
-  const G4double milligray = 1.e-3*gray;
-  const G4double microgray = 1.e-6*gray;
-  const G4double nanogray  = 1.e-9*gray;
-  const G4double picogray  = 1.e-12*gray;
-
-  new G4UnitDefinition("milligray", "milliGy" , "Dose", milligray);
-  new G4UnitDefinition("microgray", "microGy" , "Dose", microgray);
-  new G4UnitDefinition("nanogray" , "nanoGy"  , "Dose", nanogray);
-  new G4UnitDefinition("picogray" , "picoGy"  , "Dose", picogray);
-
-  // Register accumulable to the accumulable manager
-  G4AccumulableManager* accumulableManager = G4AccumulableManager::Instance();
-  accumulableManager->RegisterAccumulable(fGoodEvents);
-  accumulableManager->RegisterAccumulable(fSumDose);
-}
-
-void RunAction::BeginOfRunAction(const G4Run* run)
-{
-  G4cout << "### Run " << run->GetRunID() << " start." << G4endl;
-
-  // reset accumulables to their initial values
-  G4AccumulableManager* accumulableManager = G4AccumulableManager::Instance();
-  accumulableManager->Reset();
-
-  //inform the runManager to save random number seed
-  G4RunManager::GetRunManager()->SetRandomNumberStore(false);
-}
-
-void RunAction::EndOfRunAction(const G4Run* run)
-{
-  G4int nofEvents = run->GetNumberOfEvent();
-  if (nofEvents == 0) return;
-
-  // Merge accumulables
-  G4AccumulableManager* accumulableManager = G4AccumulableManager::Instance();
-  accumulableManager->Merge();
-
-  // Run conditions
-  //  note: There is no primary generator action object for "master"
-  //        run manager for multi-threaded mode.
-  const auto generatorAction = static_cast<const PrimaryGeneratorAction*>(
-    G4RunManager::GetRunManager()->GetUserPrimaryGeneratorAction());
-  G4String partName;
-  if (generatorAction)
+  RunAction::RunAction()
   {
-    G4ParticleDefinition* particle
-      = generatorAction->GetParticleGun()->GetParticleDefinition();
-    partName = particle->GetParticleName();
+    // Register accumulable to the accumulable manager
+    G4AccumulableManager* accumulableManager = G4AccumulableManager::Instance();
+    accumulableManager->RegisterAccumulable(fGoodEvents);
+    accumulableManager->RegisterAccumulable(fSumDose);
   }
 
-  // Print results
-  //
-  if (IsMaster())
+  void RunAction::BeginOfRunAction(const G4Run* run)
   {
-    G4cout
-     << G4endl
-     << "--------------------End of Global Run-----------------------"
-     << G4endl
-     << "  The run was " << nofEvents << " events ";
+    G4cout << "### Run " << run->GetRunID() << " start." << G4endl;
+
+    // reset accumulables to their initial values
+    G4AccumulableManager* accumulableManager = G4AccumulableManager::Instance();
+    accumulableManager->Reset();
+
+    //inform the runManager to save random number seed
+    G4RunManager::GetRunManager()->SetRandomNumberStore(false);
   }
-  else
+
+  void RunAction::EndOfRunAction(const G4Run* run)
   {
-    G4cout
-     << G4endl
-     << "--------------------End of Local Run------------------------"
-     << G4endl
-     << "  The run was " << nofEvents << " "<< partName;
+    G4int nofEvents = run->GetNumberOfEvent();
+    if (nofEvents == 0) return;
+
+    // Merge accumulables
+    G4AccumulableManager* accumulableManager = G4AccumulableManager::Instance();
+    accumulableManager->Merge();
+
+    // Run conditions
+    const auto generatorAction = static_cast<const PrimaryGeneratorAction*>(G4RunManager::GetRunManager()->GetUserPrimaryGeneratorAction());
   }
-  G4cout
-     << "; Nb of 'good' e+ annihilations: " << fGoodEvents.GetValue()  << G4endl
-     << " Total dose in patient : " << G4BestUnit(fSumDose.GetValue(),"Dose")
-     << G4endl
-     << "------------------------------------------------------------" << G4endl
-     << G4endl;
-}
 }
 

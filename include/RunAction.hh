@@ -17,7 +17,7 @@ class RunAction : public G4UserRunAction
     ~RunAction() override = default;
 
     void BeginOfRunAction(const G4Run*) override;
-    void   EndOfRunAction(const G4Run*) override;
+    void EndOfRunAction(const G4Run*) override;
 
     void CountEvent()           { fGoodEvents += 1; };
     void SumDose(G4double dose) { fSumDose += dose; };

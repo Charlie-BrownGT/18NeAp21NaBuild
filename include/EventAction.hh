@@ -22,7 +22,7 @@ class EventAction : public G4UserEventAction
     ~EventAction() override = default;
 
     void  BeginOfEventAction(const G4Event*) override;
-    void    EndOfEventAction(const G4Event*) override;
+    void  EndOfEventAction(const G4Event*) override;
 
   private:
     RunAction* fRunAction = nullptr;
