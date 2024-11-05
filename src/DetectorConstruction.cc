@@ -1,20 +1,6 @@
 #include "DetectorConstruction.hh"
 
-#include "G4NistManager.hh"
-#include "G4Box.hh"
-#include "G4Tubs.hh"
-#include "G4LogicalVolume.hh"
-#include "G4PVPlacement.hh"
-#include "G4RotationMatrix.hh"
-#include "G4Transform3D.hh"
-#include "G4SDManager.hh"
-#include "G4MultiFunctionalDetector.hh"
-#include "G4VPrimitiveScorer.hh"
-#include "G4PSEnergyDeposit.hh"
-#include "G4PSDoseDeposit.hh"
-#include "G4VisAttributes.hh"
-#include "G4PhysicalConstants.hh"
-#include "G4SystemOfUnits.hh"
+
 
 namespace B3
 {
@@ -30,7 +16,7 @@ void DetectorConstruction::DefineMaterials()
 
   G4bool isotopes = false;
 
-  G4Element*  O = man->FindOrBuildElement("O" , isotopes);
+  O = man->FindOrBuildElement("O" , isotopes);
   G4Element* Si = man->FindOrBuildElement("Si", isotopes);
   G4Element* Lu = man->FindOrBuildElement("Lu", isotopes);
 
@@ -38,12 +24,31 @@ void DetectorConstruction::DefineMaterials()
   LSO->AddElement(Lu, 2);
   LSO->AddElement(Si, 1);
   LSO->AddElement(O , 5);
+
+  G4double z, a;
+	G4double density = 1.e-25*g/cm3, pressure = 1.e-5*pascal, temperature = 2.73 * kelvin;
+	vacuum = new G4Material("Vacuum", z=1., a=1.008 * g/mole, density, kStateGas, temperature, pressure);
+
+  Li = new G4Element("Lithium","Li" , 3., 7.00*g/mole);
+	LiTarget = new G4Material("LiTarget", 0.534*g/cm3, 1);
+	LiTarget->AddElement(Li, 100.0*perCent);
+
+  YAPCe = new G4Material("YAPCe", 5.37*g/cm3, 4);
+	Y = man->FindOrBuildElement("Y");
+	Ce = man->FindOrBuildElement("Ce");
+	Al = man->FindOrBuildElement("Al");
+	//O = man->FindOrBuildElement("O");
+	YAPCe->AddElement(Y, 14.75*perCent);
+	YAPCe->AddElement(Ce, 0.25*perCent);
+	YAPCe->AddElement(Al, 25.*perCent);
+	YAPCe->AddElement(O, 60.*perCent);
 }
 
 G4VPhysicalVolume* DetectorConstruction::Construct()
 {
   G4double innerRadius = 0*cm, outerRadius = 15*cm, hz = 10*um, startAngle = 0.*deg, spanningAngle = 360.*deg;
-  
+  G4double IDinnerRadius = 0*cm, IDouterRadius = 30*cm, IDhz = 20*cm, IDstartAngle = 0.*deg, IDspanningAngle = 360.*deg;
+
   G4NistManager* nist = G4NistManager::Instance();
   G4Material* default_mat = nist->FindOrBuildMaterial("G4_AIR");
   G4Material* cryst_mat   = nist->FindOrBuildMaterial("Lu2SiO5");
@@ -52,27 +57,16 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   auto logicWorld = new G4LogicalVolume(solidWorld, default_mat, "World");
   auto physWorld = new G4PVPlacement(nullptr, G4ThreeVector(), logicWorld, "World", nullptr, false, 0, fCheckOverlaps);                          
 
-  // ring
-  G4ThreeVector ringPos(0, 0, 1.*m);
-  auto solidRing = new G4Tubs("Ring", innerRadius, outerRadius*2, hz*2, startAngle, spanningAngle);
-  auto logicRing = new G4LogicalVolume(solidRing, default_mat, "Ring");                                       
-  new G4PVPlacement(nullptr, ringPos, logicRing, "ring", logicWorld, false, 0, fCheckOverlaps);  
-
-  // define crystal
+  // define crystal, used as a detector later
   G4ThreeVector crystPos(0, 0, 0.5*m);
-  auto solidCryst = new G4Box("crystal", 10*cm, 10*cm, 10*cm);
+  auto solidCryst = new G4Box("crystal", 10.*cm, 10.*cm, 0.5*mm);
   auto logicCryst = new G4LogicalVolume(solidCryst, cryst_mat, "CrystalLV");
   new G4PVPlacement(nullptr, crystPos, logicCryst, "crystal", logicWorld, false, 0, fCheckOverlaps);
 
-  G4ThreeVector detectorPos(0, 0, 1.*m);
-  auto solidDetector = new G4Tubs("Detector", innerRadius, outerRadius, hz, startAngle, spanningAngle);
-  auto logicDetector = new G4LogicalVolume(solidDetector, default_mat, "Detector");
-  new G4PVPlacement(nullptr, detectorPos, logicDetector, "Detector", logicWorld, false, 0, fCheckOverlaps);  
-
-  // patient
-  G4ThreeVector patientPos(0, 0, -0.5*m);
+  // patient, used as a detector later
+  G4ThreeVector patientPos(0, 0, 0.75*m);
   G4Material* patient_mat = nist->FindOrBuildMaterial("G4_BRAIN_ICRP");
-  auto solidPatient = new G4Tubs("Patient", innerRadius, outerRadius, hz, startAngle, spanningAngle);
+  auto solidPatient = new G4Tubs("Patient", IDinnerRadius, IDouterRadius, IDhz, IDstartAngle, IDspanningAngle);
   auto logicPatient = new G4LogicalVolume(solidPatient, patient_mat, "PatientLV");                                        
   new G4PVPlacement(nullptr, patientPos, logicPatient, "Patient", logicWorld, false, 0, fCheckOverlaps);          
 

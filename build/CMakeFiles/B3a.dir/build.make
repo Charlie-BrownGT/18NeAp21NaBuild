@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/guy/software/geant4/projects/18NeAp21NaBuild-dev
+CMAKE_SOURCE_DIR = /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build
+CMAKE_BINARY_DIR = /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build
 
 # Utility rule file for B3a.
 
@@ -81,6 +81,6 @@ CMakeFiles/B3a.dir/clean:
 .PHONY : CMakeFiles/B3a.dir/clean
 
 CMakeFiles/B3a.dir/depend:
-	cd /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/guy/software/geant4/projects/18NeAp21NaBuild-dev /home/guy/software/geant4/projects/18NeAp21NaBuild-dev /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build/CMakeFiles/B3a.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build/CMakeFiles/B3a.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/B3a.dir/depend
 

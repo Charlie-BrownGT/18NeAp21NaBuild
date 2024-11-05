@@ -14,27 +14,19 @@ class G4Event;
 
 namespace B3
 {
+  class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
+  {
+    public:
+      PrimaryGeneratorAction();
+      ~PrimaryGeneratorAction() override;
 
-/// The primary generator action class with particle gum.
-///
-/// It defines an ion (F18), at rest, randomly distribued within a zone
-/// in a patient defined in GeneratePrimaries(). Ion F18 can be changed
-/// with the G4ParticleGun commands (see run2.mac).
+      void GeneratePrimaries(G4Event*) override;
 
-class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
-{
-  public:
-    PrimaryGeneratorAction();
-    ~PrimaryGeneratorAction() override;
+      const G4ParticleGun* GetParticleGun() const { return fParticleGun; }
 
-    void GeneratePrimaries(G4Event*) override;
-
-    const G4ParticleGun* GetParticleGun() const { return fParticleGun; }
-
-  private:
-    G4ParticleGun* fParticleGun = nullptr;
-    G4GeneralParticleSource* particleGun;
-};
-
+    private:
+      G4ParticleGun* fParticleGun = nullptr;
+      G4GeneralParticleSource* particleGun;
+  };
 }
 #endif
