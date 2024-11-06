@@ -44,6 +44,7 @@ namespace B3
     auto logicWorld = new G4LogicalVolume(solidWorld, vacuum, "World");
     auto physWorld = new G4PVPlacement(nullptr, G4ThreeVector(), logicWorld, "World", nullptr, false, 0, fCheckOverlaps);                          
 
+    // define lithium target
     G4double TinnerRadius = 0*cm, TouterRadius = 5*cm, Thz = 0.5*mm, TstartAngle = 0.*deg, TspanningAngle = 360.*deg;
     G4ThreeVector targetPos(0, 0, 0.1*m);
     auto solidTarget = new G4Tubs("ID", TinnerRadius, TouterRadius, Thz, TstartAngle, TspanningAngle);
@@ -53,14 +54,14 @@ namespace B3
     // define crystal, used as a detector later
     G4ThreeVector crystPos(0, 0, 1.*m);
     auto solidCryst = new G4Box("crystal", 1.*cm, 1.*cm, 0.5*mm);
-    auto logicCryst = new G4LogicalVolume(solidCryst, YAPCe, "CrystalLV");
+    logicCryst = new G4LogicalVolume(solidCryst, YAPCe, "CrystalLV");
     new G4PVPlacement(nullptr, crystPos, logicCryst, "crystal", logicWorld, false, 0, fCheckOverlaps);
 
     // patient, used as a detector later
     G4double IDinnerRadius = 0*cm, IDouterRadius = 90*cm, IDhz = 20*cm, IDstartAngle = 0.*deg, IDspanningAngle = 360.*deg;
     G4ThreeVector IDPos(0, 0, 1.25*m);
     auto solidID = new G4Tubs("ID", IDinnerRadius, IDouterRadius, IDhz, IDstartAngle, IDspanningAngle);
-    auto logicID = new G4LogicalVolume(solidID, CF4, "IDLV");                                        
+    logicID = new G4LogicalVolume(solidID, CF4, "IDLV");                                        
     new G4PVPlacement(nullptr, IDPos, logicID, "ID", logicWorld, false, 0, fCheckOverlaps);          
 
     // Print materials
@@ -71,8 +72,14 @@ namespace B3
 
   void DetectorConstruction::ConstructSDandField()
   {
-    G4SDManager::GetSDMpointer()->SetVerboseLevel(1);
+    PositionDetector *CrystPos = new PositionDetector("CrystalPos");
+		logicCryst->SetSensitiveDetector(CrystPos);
 
+    PositionDetector *IDPos = new PositionDetector("ID");
+		logicID->SetSensitiveDetector(IDPos);
+
+    //G4SDManager::GetSDMpointer()->SetVerboseLevel(1);
+    /*
     // declare crystal as a MultiFunctionalDetector scorer
     auto cryst = new G4MultiFunctionalDetector("crystal");
     G4SDManager::GetSDMpointer()->AddNewDetector(cryst);
@@ -86,6 +93,9 @@ namespace B3
     G4VPrimitiveScorer* primitiv2 = new G4PSEnergyDeposit("IDEdep");
     IonDet->RegisterPrimitive(primitiv2);
     SetSensitiveDetector("IDLV",IonDet);
+    */
+
+
   }
 }
 

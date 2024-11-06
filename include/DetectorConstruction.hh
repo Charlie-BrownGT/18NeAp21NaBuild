@@ -21,6 +21,7 @@
 #include "G4SystemOfUnits.hh"
 
 #include "PositionDetector.hh"
+//#include "detector.hh"
 
 class G4VPhysicalVolume;
 class G4LogicalVolume;
@@ -45,7 +46,7 @@ namespace B3
 
       G4bool fCheckOverlaps = true;
 
-      G4LogicalVolume *logicCryst;
+      G4LogicalVolume *logicCryst, *logicID;
   };
 }
 #endif
