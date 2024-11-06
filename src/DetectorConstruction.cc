@@ -72,11 +72,11 @@ namespace B3
 
   void DetectorConstruction::ConstructSDandField()
   {
-    Detector *CrystPos = new Detector("CrystalPos");
-		logicCryst->SetSensitiveDetector(CrystPos);
+    Detector *Cryst = new Detector("Cryst");
+		logicCryst->SetSensitiveDetector(Cryst);
 
-    Detector *IDPos = new Detector("ID");
-		logicID->SetSensitiveDetector(IDPos);
+    Detector *ID = new Detector("ID");
+		logicID->SetSensitiveDetector(ID);
 
     //G4SDManager::GetSDMpointer()->SetVerboseLevel(1);
     /*
