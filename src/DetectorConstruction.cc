@@ -94,8 +94,6 @@ namespace B3
     IonDet->RegisterPrimitive(primitiv2);
     SetSensitiveDetector("IDLV",IonDet);
     */
-
-
   }
 }
 
