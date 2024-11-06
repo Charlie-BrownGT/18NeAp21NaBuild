@@ -1,7 +1,7 @@
 CMakeFiles/sim.dir/src/EventAction.cc.o: \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/EventAction.cc \
+ /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/EventAction.cc \
  /usr/include/stdc-predef.h \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/include/EventAction.hh \
+ /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/include/EventAction.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UserEventAction.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/globals.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ios.hh \
@@ -235,7 +235,7 @@ CMakeFiles/sim.dir/src/EventAction.cc.o: \
  /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
- /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/include/RunAction.hh \
+ /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/include/RunAction.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UserRunAction.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Accumulable.hh \
  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VAccumulable.hh \
