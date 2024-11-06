@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/guy/software/geant4/projects/18NeAp21NaBuild-dev
+CMAKE_SOURCE_DIR = /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build
+CMAKE_BINARY_DIR = /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build/CMakeFiles /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build/CMakeFiles /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -294,6 +294,30 @@ src/PhysicsList.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/PhysicsList.cc.s
 .PHONY : src/PhysicsList.cc.s
 
+src/PositionDetector.o: src/PositionDetector.cc.o
+.PHONY : src/PositionDetector.o
+
+# target to build an object file
+src/PositionDetector.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/PositionDetector.cc.o
+.PHONY : src/PositionDetector.cc.o
+
+src/PositionDetector.i: src/PositionDetector.cc.i
+.PHONY : src/PositionDetector.i
+
+# target to preprocess a source file
+src/PositionDetector.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/PositionDetector.cc.i
+.PHONY : src/PositionDetector.cc.i
+
+src/PositionDetector.s: src/PositionDetector.cc.s
+.PHONY : src/PositionDetector.s
+
+# target to generate assembly for a file
+src/PositionDetector.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/PositionDetector.cc.s
+.PHONY : src/PositionDetector.cc.s
+
 src/PrimaryGeneratorAction.o: src/PrimaryGeneratorAction.cc.o
 .PHONY : src/PrimaryGeneratorAction.o
 
@@ -394,6 +418,9 @@ help:
 	@echo "... src/PhysicsList.o"
 	@echo "... src/PhysicsList.i"
 	@echo "... src/PhysicsList.s"
+	@echo "... src/PositionDetector.o"
+	@echo "... src/PositionDetector.i"
+	@echo "... src/PositionDetector.s"
 	@echo "... src/PrimaryGeneratorAction.o"
 	@echo "... src/PrimaryGeneratorAction.i"
 	@echo "... src/PrimaryGeneratorAction.s"

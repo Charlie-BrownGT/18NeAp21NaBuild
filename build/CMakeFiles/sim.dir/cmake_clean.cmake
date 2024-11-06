@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/sim.dir/src/EventAction.cc.o.d"
   "CMakeFiles/sim.dir/src/PhysicsList.cc.o"
   "CMakeFiles/sim.dir/src/PhysicsList.cc.o.d"
+  "CMakeFiles/sim.dir/src/PositionDetector.cc.o"
+  "CMakeFiles/sim.dir/src/PositionDetector.cc.o.d"
   "CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.o"
   "CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.o.d"
   "CMakeFiles/sim.dir/src/RunAction.cc.o"

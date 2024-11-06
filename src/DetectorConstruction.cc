@@ -80,6 +80,9 @@ namespace B3
     G4VPrimitiveScorer* primitiv2 = new G4PSEnergyDeposit("IDEdep");
     IonDet->RegisterPrimitive(primitiv2);
     SetSensitiveDetector("IDLV",IonDet);
+
+    //PositionDetector *sensCryst = new PositionDetector("crystPosition");
+    //logicCryst->SetSensitiveDetector(sensCryst);
   }
 }
 

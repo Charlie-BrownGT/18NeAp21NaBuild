@@ -20,6 +20,8 @@
 #include "G4PhysicalConstants.hh"
 #include "G4SystemOfUnits.hh"
 
+#include "PositionDetector.hh"
+
 class G4VPhysicalVolume;
 class G4LogicalVolume;
 
@@ -42,6 +44,8 @@ namespace B3
       G4Element *Li, *Y, *Ce, *Al, *O, *C, *F;
 
       G4bool fCheckOverlaps = true;
+
+      G4LogicalVolume *logicCryst;
   };
 }
 #endif

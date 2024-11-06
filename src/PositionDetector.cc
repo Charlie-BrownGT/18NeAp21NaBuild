@@ -1,0 +1,41 @@
+#include "PositionDetector.hh"
+
+PositionDetector::PositionDetector(G4String name) : G4VSensitiveDetector(name)
+{}
+
+PositionDetector::~PositionDetector()
+{}
+
+G4bool PositionDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhist)
+{
+	G4Track *track = aStep->GetTrack();
+	track->SetTrackStatus(fStopAndKill);
+	
+	G4StepPoint *preStepPoint = aStep->GetPreStepPoint();
+	G4StepPoint *postStepPoint = aStep->GetPostStepPoint();
+	
+	G4ThreeVector posIon = preStepPoint->GetPosition();
+	G4cout << "Ion position: " << posIon << G4endl;
+	
+	const G4VTouchable *touchable = aStep->GetPreStepPoint()->GetTouchable();
+	G4int copyNo = touchable->GetCopyNumber();
+	//G4cout << "Copy number: " << copyNo << G4endl;
+	
+	G4VPhysicalVolume *physVol = touchable->GetVolume();
+	G4ThreeVector posDetector = physVol->GetTranslation();
+	//G4cout << "Detector position: " << posDetector << G4endl;
+	
+	G4int evt = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
+	
+    /*
+	G4AnalysisManager *man = G4AnalysisManager::Instance();
+	man->FillNtupleIColumn(0, evt);
+	man->FillNtupleDColumn(1, posIon[0]);
+	man->FillNtupleDColumn(2, posIon[1]);
+	man->FillNtupleDColumn(3, posIon[2]);
+	man->AddNtupleRow(0);
+	*/
+	//G4int runID = run->GetRunID();
+	
+	return true;
+}
