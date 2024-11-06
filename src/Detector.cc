@@ -1,12 +1,12 @@
-#include "PositionDetector.hh"
+#include "Detector.hh"
 
-PositionDetector::PositionDetector(G4String name) : G4VSensitiveDetector(name)
+Detector::Detector(G4String name) : G4VSensitiveDetector(name)
 {}
 
-PositionDetector::~PositionDetector()
+Detector::~Detector()
 {}
 
-G4bool PositionDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhist)
+G4bool Detector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhist)
 {
 	G4Track *track = aStep->GetTrack();
 	track->SetTrackStatus(fStopAndKill);

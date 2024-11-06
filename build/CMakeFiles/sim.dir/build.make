@@ -97,10 +97,24 @@ CMakeFiles/sim.dir/src/ActionInitialization.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/src/ActionInitialization.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/ActionInitialization.cc -o CMakeFiles/sim.dir/src/ActionInitialization.cc.s
 
+CMakeFiles/sim.dir/src/Detector.cc.o: CMakeFiles/sim.dir/flags.make
+CMakeFiles/sim.dir/src/Detector.cc.o: ../src/Detector.cc
+CMakeFiles/sim.dir/src/Detector.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sim.dir/src/Detector.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/src/Detector.cc.o -MF CMakeFiles/sim.dir/src/Detector.cc.o.d -o CMakeFiles/sim.dir/src/Detector.cc.o -c /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/Detector.cc
+
+CMakeFiles/sim.dir/src/Detector.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/src/Detector.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/Detector.cc > CMakeFiles/sim.dir/src/Detector.cc.i
+
+CMakeFiles/sim.dir/src/Detector.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/src/Detector.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/Detector.cc -o CMakeFiles/sim.dir/src/Detector.cc.s
+
 CMakeFiles/sim.dir/src/DetectorConstruction.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/DetectorConstruction.cc.o: ../src/DetectorConstruction.cc
 CMakeFiles/sim.dir/src/DetectorConstruction.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sim.dir/src/DetectorConstruction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sim.dir/src/DetectorConstruction.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/src/DetectorConstruction.cc.o -MF CMakeFiles/sim.dir/src/DetectorConstruction.cc.o.d -o CMakeFiles/sim.dir/src/DetectorConstruction.cc.o -c /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/DetectorConstruction.cc
 
 CMakeFiles/sim.dir/src/DetectorConstruction.cc.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/sim.dir/src/DetectorConstruction.cc.s: cmake_force
 CMakeFiles/sim.dir/src/EventAction.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/EventAction.cc.o: ../src/EventAction.cc
 CMakeFiles/sim.dir/src/EventAction.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sim.dir/src/EventAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sim.dir/src/EventAction.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/src/EventAction.cc.o -MF CMakeFiles/sim.dir/src/EventAction.cc.o.d -o CMakeFiles/sim.dir/src/EventAction.cc.o -c /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/EventAction.cc
 
 CMakeFiles/sim.dir/src/EventAction.cc.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/sim.dir/src/EventAction.cc.s: cmake_force
 CMakeFiles/sim.dir/src/PhysicsList.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/PhysicsList.cc.o: ../src/PhysicsList.cc
 CMakeFiles/sim.dir/src/PhysicsList.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sim.dir/src/PhysicsList.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sim.dir/src/PhysicsList.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/src/PhysicsList.cc.o -MF CMakeFiles/sim.dir/src/PhysicsList.cc.o.d -o CMakeFiles/sim.dir/src/PhysicsList.cc.o -c /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/PhysicsList.cc
 
 CMakeFiles/sim.dir/src/PhysicsList.cc.i: cmake_force
@@ -138,20 +152,6 @@ CMakeFiles/sim.dir/src/PhysicsList.cc.i: cmake_force
 CMakeFiles/sim.dir/src/PhysicsList.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/src/PhysicsList.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/PhysicsList.cc -o CMakeFiles/sim.dir/src/PhysicsList.cc.s
-
-CMakeFiles/sim.dir/src/PositionDetector.cc.o: CMakeFiles/sim.dir/flags.make
-CMakeFiles/sim.dir/src/PositionDetector.cc.o: ../src/PositionDetector.cc
-CMakeFiles/sim.dir/src/PositionDetector.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sim.dir/src/PositionDetector.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/src/PositionDetector.cc.o -MF CMakeFiles/sim.dir/src/PositionDetector.cc.o.d -o CMakeFiles/sim.dir/src/PositionDetector.cc.o -c /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/PositionDetector.cc
-
-CMakeFiles/sim.dir/src/PositionDetector.cc.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/src/PositionDetector.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/PositionDetector.cc > CMakeFiles/sim.dir/src/PositionDetector.cc.i
-
-CMakeFiles/sim.dir/src/PositionDetector.cc.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/src/PositionDetector.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/PositionDetector.cc -o CMakeFiles/sim.dir/src/PositionDetector.cc.s
 
 CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.o: ../src/PrimaryGeneratorAction.cc
@@ -199,10 +199,10 @@ CMakeFiles/sim.dir/src/StackingAction.cc.s: cmake_force
 sim_OBJECTS = \
 "CMakeFiles/sim.dir/sim.cc.o" \
 "CMakeFiles/sim.dir/src/ActionInitialization.cc.o" \
+"CMakeFiles/sim.dir/src/Detector.cc.o" \
 "CMakeFiles/sim.dir/src/DetectorConstruction.cc.o" \
 "CMakeFiles/sim.dir/src/EventAction.cc.o" \
 "CMakeFiles/sim.dir/src/PhysicsList.cc.o" \
-"CMakeFiles/sim.dir/src/PositionDetector.cc.o" \
 "CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.o" \
 "CMakeFiles/sim.dir/src/RunAction.cc.o" \
 "CMakeFiles/sim.dir/src/StackingAction.cc.o"
@@ -212,10 +212,10 @@ sim_EXTERNAL_OBJECTS =
 
 sim: CMakeFiles/sim.dir/sim.cc.o
 sim: CMakeFiles/sim.dir/src/ActionInitialization.cc.o
+sim: CMakeFiles/sim.dir/src/Detector.cc.o
 sim: CMakeFiles/sim.dir/src/DetectorConstruction.cc.o
 sim: CMakeFiles/sim.dir/src/EventAction.cc.o
 sim: CMakeFiles/sim.dir/src/PhysicsList.cc.o
-sim: CMakeFiles/sim.dir/src/PositionDetector.cc.o
 sim: CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.o
 sim: CMakeFiles/sim.dir/src/RunAction.cc.o
 sim: CMakeFiles/sim.dir/src/StackingAction.cc.o

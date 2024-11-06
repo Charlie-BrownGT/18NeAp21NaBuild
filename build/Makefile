@@ -222,6 +222,30 @@ src/ActionInitialization.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/ActionInitialization.cc.s
 .PHONY : src/ActionInitialization.cc.s
 
+src/Detector.o: src/Detector.cc.o
+.PHONY : src/Detector.o
+
+# target to build an object file
+src/Detector.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/Detector.cc.o
+.PHONY : src/Detector.cc.o
+
+src/Detector.i: src/Detector.cc.i
+.PHONY : src/Detector.i
+
+# target to preprocess a source file
+src/Detector.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/Detector.cc.i
+.PHONY : src/Detector.cc.i
+
+src/Detector.s: src/Detector.cc.s
+.PHONY : src/Detector.s
+
+# target to generate assembly for a file
+src/Detector.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/Detector.cc.s
+.PHONY : src/Detector.cc.s
+
 src/DetectorConstruction.o: src/DetectorConstruction.cc.o
 .PHONY : src/DetectorConstruction.o
 
@@ -293,30 +317,6 @@ src/PhysicsList.s: src/PhysicsList.cc.s
 src/PhysicsList.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/PhysicsList.cc.s
 .PHONY : src/PhysicsList.cc.s
-
-src/PositionDetector.o: src/PositionDetector.cc.o
-.PHONY : src/PositionDetector.o
-
-# target to build an object file
-src/PositionDetector.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/PositionDetector.cc.o
-.PHONY : src/PositionDetector.cc.o
-
-src/PositionDetector.i: src/PositionDetector.cc.i
-.PHONY : src/PositionDetector.i
-
-# target to preprocess a source file
-src/PositionDetector.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/PositionDetector.cc.i
-.PHONY : src/PositionDetector.cc.i
-
-src/PositionDetector.s: src/PositionDetector.cc.s
-.PHONY : src/PositionDetector.s
-
-# target to generate assembly for a file
-src/PositionDetector.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sim.dir/build.make CMakeFiles/sim.dir/src/PositionDetector.cc.s
-.PHONY : src/PositionDetector.cc.s
 
 src/PrimaryGeneratorAction.o: src/PrimaryGeneratorAction.cc.o
 .PHONY : src/PrimaryGeneratorAction.o
@@ -409,6 +409,9 @@ help:
 	@echo "... src/ActionInitialization.o"
 	@echo "... src/ActionInitialization.i"
 	@echo "... src/ActionInitialization.s"
+	@echo "... src/Detector.o"
+	@echo "... src/Detector.i"
+	@echo "... src/Detector.s"
 	@echo "... src/DetectorConstruction.o"
 	@echo "... src/DetectorConstruction.i"
 	@echo "... src/DetectorConstruction.s"
@@ -418,9 +421,6 @@ help:
 	@echo "... src/PhysicsList.o"
 	@echo "... src/PhysicsList.i"
 	@echo "... src/PhysicsList.s"
-	@echo "... src/PositionDetector.o"
-	@echo "... src/PositionDetector.i"
-	@echo "... src/PositionDetector.s"
 	@echo "... src/PrimaryGeneratorAction.o"
 	@echo "... src/PrimaryGeneratorAction.i"
 	@echo "... src/PrimaryGeneratorAction.s"

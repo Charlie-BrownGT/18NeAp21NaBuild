@@ -20,7 +20,7 @@
 #include "G4PhysicalConstants.hh"
 #include "G4SystemOfUnits.hh"
 
-#include "PositionDetector.hh"
+#include "Detector.hh"
 //#include "detector.hh"
 
 class G4VPhysicalVolume;
