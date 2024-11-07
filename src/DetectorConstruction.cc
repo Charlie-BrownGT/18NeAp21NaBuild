@@ -53,7 +53,7 @@ namespace B3
 
     // define crystal, used as a detector later
     G4ThreeVector crystPos(0, 0, 1.*m);
-    auto solidCryst = new G4Box("crystal", 1.*cm, 1.*cm, 0.5*mm);
+    auto solidCryst = new G4Box("crystal", 1.*cm, 1.*cm, 0.005*mm);
     logicCryst = new G4LogicalVolume(solidCryst, YAPCe, "CrystalLV");
     new G4PVPlacement(nullptr, crystPos, logicCryst, "crystal", logicWorld, false, 0, fCheckOverlaps);
 

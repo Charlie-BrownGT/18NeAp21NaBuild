@@ -1,0 +1,1 @@
+hadd -f combined_output.root test*.root

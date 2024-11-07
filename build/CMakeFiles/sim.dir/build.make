@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/guy/software/geant4/projects/18NeAp21NaBuild-dev
+CMAKE_SOURCE_DIR = /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build
+CMAKE_BINARY_DIR = /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/sim.dir/depend.make
@@ -72,128 +72,128 @@ include CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/sim.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/sim.cc.o: ../sim.cc
 CMakeFiles/sim.dir/sim.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sim.dir/sim.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/sim.cc.o -MF CMakeFiles/sim.dir/sim.cc.o.d -o CMakeFiles/sim.dir/sim.cc.o -c /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/sim.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sim.dir/sim.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/sim.cc.o -MF CMakeFiles/sim.dir/sim.cc.o.d -o CMakeFiles/sim.dir/sim.cc.o -c /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/sim.cc
 
 CMakeFiles/sim.dir/sim.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/sim.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/sim.cc > CMakeFiles/sim.dir/sim.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/sim.cc > CMakeFiles/sim.dir/sim.cc.i
 
 CMakeFiles/sim.dir/sim.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/sim.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/sim.cc -o CMakeFiles/sim.dir/sim.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/sim.cc -o CMakeFiles/sim.dir/sim.cc.s
 
 CMakeFiles/sim.dir/src/ActionInitialization.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/ActionInitialization.cc.o: ../src/ActionInitialization.cc
 CMakeFiles/sim.dir/src/ActionInitialization.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sim.dir/src/ActionInitialization.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/src/ActionInitialization.cc.o -MF CMakeFiles/sim.dir/src/ActionInitialization.cc.o.d -o CMakeFiles/sim.dir/src/ActionInitialization.cc.o -c /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/ActionInitialization.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sim.dir/src/ActionInitialization.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/src/ActionInitialization.cc.o -MF CMakeFiles/sim.dir/src/ActionInitialization.cc.o.d -o CMakeFiles/sim.dir/src/ActionInitialization.cc.o -c /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/ActionInitialization.cc
 
 CMakeFiles/sim.dir/src/ActionInitialization.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/src/ActionInitialization.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/ActionInitialization.cc > CMakeFiles/sim.dir/src/ActionInitialization.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/ActionInitialization.cc > CMakeFiles/sim.dir/src/ActionInitialization.cc.i
 
 CMakeFiles/sim.dir/src/ActionInitialization.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/src/ActionInitialization.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/ActionInitialization.cc -o CMakeFiles/sim.dir/src/ActionInitialization.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/ActionInitialization.cc -o CMakeFiles/sim.dir/src/ActionInitialization.cc.s
 
 CMakeFiles/sim.dir/src/Detector.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/Detector.cc.o: ../src/Detector.cc
 CMakeFiles/sim.dir/src/Detector.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sim.dir/src/Detector.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/src/Detector.cc.o -MF CMakeFiles/sim.dir/src/Detector.cc.o.d -o CMakeFiles/sim.dir/src/Detector.cc.o -c /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/Detector.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sim.dir/src/Detector.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/src/Detector.cc.o -MF CMakeFiles/sim.dir/src/Detector.cc.o.d -o CMakeFiles/sim.dir/src/Detector.cc.o -c /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/Detector.cc
 
 CMakeFiles/sim.dir/src/Detector.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/src/Detector.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/Detector.cc > CMakeFiles/sim.dir/src/Detector.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/Detector.cc > CMakeFiles/sim.dir/src/Detector.cc.i
 
 CMakeFiles/sim.dir/src/Detector.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/src/Detector.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/Detector.cc -o CMakeFiles/sim.dir/src/Detector.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/Detector.cc -o CMakeFiles/sim.dir/src/Detector.cc.s
 
 CMakeFiles/sim.dir/src/DetectorConstruction.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/DetectorConstruction.cc.o: ../src/DetectorConstruction.cc
 CMakeFiles/sim.dir/src/DetectorConstruction.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sim.dir/src/DetectorConstruction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/src/DetectorConstruction.cc.o -MF CMakeFiles/sim.dir/src/DetectorConstruction.cc.o.d -o CMakeFiles/sim.dir/src/DetectorConstruction.cc.o -c /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/DetectorConstruction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sim.dir/src/DetectorConstruction.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/src/DetectorConstruction.cc.o -MF CMakeFiles/sim.dir/src/DetectorConstruction.cc.o.d -o CMakeFiles/sim.dir/src/DetectorConstruction.cc.o -c /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/DetectorConstruction.cc
 
 CMakeFiles/sim.dir/src/DetectorConstruction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/src/DetectorConstruction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/DetectorConstruction.cc > CMakeFiles/sim.dir/src/DetectorConstruction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/DetectorConstruction.cc > CMakeFiles/sim.dir/src/DetectorConstruction.cc.i
 
 CMakeFiles/sim.dir/src/DetectorConstruction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/src/DetectorConstruction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/DetectorConstruction.cc -o CMakeFiles/sim.dir/src/DetectorConstruction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/DetectorConstruction.cc -o CMakeFiles/sim.dir/src/DetectorConstruction.cc.s
 
 CMakeFiles/sim.dir/src/EventAction.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/EventAction.cc.o: ../src/EventAction.cc
 CMakeFiles/sim.dir/src/EventAction.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sim.dir/src/EventAction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/src/EventAction.cc.o -MF CMakeFiles/sim.dir/src/EventAction.cc.o.d -o CMakeFiles/sim.dir/src/EventAction.cc.o -c /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/EventAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sim.dir/src/EventAction.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/src/EventAction.cc.o -MF CMakeFiles/sim.dir/src/EventAction.cc.o.d -o CMakeFiles/sim.dir/src/EventAction.cc.o -c /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/EventAction.cc
 
 CMakeFiles/sim.dir/src/EventAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/src/EventAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/EventAction.cc > CMakeFiles/sim.dir/src/EventAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/EventAction.cc > CMakeFiles/sim.dir/src/EventAction.cc.i
 
 CMakeFiles/sim.dir/src/EventAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/src/EventAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/EventAction.cc -o CMakeFiles/sim.dir/src/EventAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/EventAction.cc -o CMakeFiles/sim.dir/src/EventAction.cc.s
 
 CMakeFiles/sim.dir/src/PhysicsList.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/PhysicsList.cc.o: ../src/PhysicsList.cc
 CMakeFiles/sim.dir/src/PhysicsList.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sim.dir/src/PhysicsList.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/src/PhysicsList.cc.o -MF CMakeFiles/sim.dir/src/PhysicsList.cc.o.d -o CMakeFiles/sim.dir/src/PhysicsList.cc.o -c /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/PhysicsList.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sim.dir/src/PhysicsList.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/src/PhysicsList.cc.o -MF CMakeFiles/sim.dir/src/PhysicsList.cc.o.d -o CMakeFiles/sim.dir/src/PhysicsList.cc.o -c /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/PhysicsList.cc
 
 CMakeFiles/sim.dir/src/PhysicsList.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/src/PhysicsList.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/PhysicsList.cc > CMakeFiles/sim.dir/src/PhysicsList.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/PhysicsList.cc > CMakeFiles/sim.dir/src/PhysicsList.cc.i
 
 CMakeFiles/sim.dir/src/PhysicsList.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/src/PhysicsList.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/PhysicsList.cc -o CMakeFiles/sim.dir/src/PhysicsList.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/PhysicsList.cc -o CMakeFiles/sim.dir/src/PhysicsList.cc.s
 
 CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.o: ../src/PrimaryGeneratorAction.cc
 CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.o -MF CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.o.d -o CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.o -c /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/PrimaryGeneratorAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.o -MF CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.o.d -o CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.o -c /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/PrimaryGeneratorAction.cc
 
 CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/PrimaryGeneratorAction.cc > CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/PrimaryGeneratorAction.cc > CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.i
 
 CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/PrimaryGeneratorAction.cc -o CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/PrimaryGeneratorAction.cc -o CMakeFiles/sim.dir/src/PrimaryGeneratorAction.cc.s
 
 CMakeFiles/sim.dir/src/RunAction.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/RunAction.cc.o: ../src/RunAction.cc
 CMakeFiles/sim.dir/src/RunAction.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/sim.dir/src/RunAction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/src/RunAction.cc.o -MF CMakeFiles/sim.dir/src/RunAction.cc.o.d -o CMakeFiles/sim.dir/src/RunAction.cc.o -c /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/RunAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/sim.dir/src/RunAction.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/src/RunAction.cc.o -MF CMakeFiles/sim.dir/src/RunAction.cc.o.d -o CMakeFiles/sim.dir/src/RunAction.cc.o -c /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/RunAction.cc
 
 CMakeFiles/sim.dir/src/RunAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/src/RunAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/RunAction.cc > CMakeFiles/sim.dir/src/RunAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/RunAction.cc > CMakeFiles/sim.dir/src/RunAction.cc.i
 
 CMakeFiles/sim.dir/src/RunAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/src/RunAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/RunAction.cc -o CMakeFiles/sim.dir/src/RunAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/RunAction.cc -o CMakeFiles/sim.dir/src/RunAction.cc.s
 
 CMakeFiles/sim.dir/src/StackingAction.cc.o: CMakeFiles/sim.dir/flags.make
 CMakeFiles/sim.dir/src/StackingAction.cc.o: ../src/StackingAction.cc
 CMakeFiles/sim.dir/src/StackingAction.cc.o: CMakeFiles/sim.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/sim.dir/src/StackingAction.cc.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/src/StackingAction.cc.o -MF CMakeFiles/sim.dir/src/StackingAction.cc.o.d -o CMakeFiles/sim.dir/src/StackingAction.cc.o -c /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/StackingAction.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/sim.dir/src/StackingAction.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sim.dir/src/StackingAction.cc.o -MF CMakeFiles/sim.dir/src/StackingAction.cc.o.d -o CMakeFiles/sim.dir/src/StackingAction.cc.o -c /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/StackingAction.cc
 
 CMakeFiles/sim.dir/src/StackingAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sim.dir/src/StackingAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/StackingAction.cc > CMakeFiles/sim.dir/src/StackingAction.cc.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/StackingAction.cc > CMakeFiles/sim.dir/src/StackingAction.cc.i
 
 CMakeFiles/sim.dir/src/StackingAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sim.dir/src/StackingAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/src/StackingAction.cc -o CMakeFiles/sim.dir/src/StackingAction.cc.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/src/StackingAction.cc -o CMakeFiles/sim.dir/src/StackingAction.cc.s
 
 # Object files for target sim
 sim_OBJECTS = \
@@ -262,7 +262,7 @@ sim: /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/lib/libG4global.so
 sim: /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/lib/libG4clhep.so
 sim: /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/lib/libG4ptl.so.2.3.3
 sim: CMakeFiles/sim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable sim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable sim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -274,6 +274,6 @@ CMakeFiles/sim.dir/clean:
 .PHONY : CMakeFiles/sim.dir/clean
 
 CMakeFiles/sim.dir/depend:
-	cd /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/guy/software/geant4/projects/18NeAp21NaBuild-dev /home/guy/software/geant4/projects/18NeAp21NaBuild-dev /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build /home/guy/software/geant4/projects/18NeAp21NaBuild-dev/build/CMakeFiles/sim.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/projects/18NeAp21NaBuild-dev/build/CMakeFiles/sim.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/sim.dir/depend
 

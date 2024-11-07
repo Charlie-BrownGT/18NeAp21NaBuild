@@ -2199,7 +2199,8 @@ CMakeFiles/sim.dir/src/Detector.cc.o: ../src/Detector.cc \
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/list.tcc \
   /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Run.hh \
-  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UserRunAction.hh
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UserRunAction.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4SystemOfUnits.hh
 
 CMakeFiles/sim.dir/src/DetectorConstruction.cc.o: ../src/DetectorConstruction.cc \
   /usr/include/stdc-predef.h \

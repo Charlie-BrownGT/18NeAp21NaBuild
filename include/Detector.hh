@@ -6,6 +6,7 @@
 #include "G4RunManager.hh"
 #include "G4Run.hh"
 #include "G4UserRunAction.hh"
+#include "G4SystemOfUnits.hh"
 
 class Detector : public G4VSensitiveDetector
 {
