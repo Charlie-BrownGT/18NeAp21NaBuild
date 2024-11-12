@@ -41,9 +41,9 @@ int main(int argc,char** argv)
   auto UImanager = G4UImanager::GetUIpointer();
 
   // Activate score ntuple writer
-  //G4TScoreNtupleWriter<G4AnalysisManager> scoreNtupleWriter;
-  //scoreNtupleWriter.SetVerboseLevel(1);
-  //scoreNtupleWriter.SetNtupleMerging(true);
+  G4TScoreNtupleWriter<G4AnalysisManager> scoreNtupleWriter;
+  scoreNtupleWriter.SetVerboseLevel(1);
+  scoreNtupleWriter.SetNtupleMerging(true);
 
   if (ui) {
     UImanager->ApplyCommand("/control/execute init_vis.mac");
