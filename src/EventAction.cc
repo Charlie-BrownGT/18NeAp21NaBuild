@@ -10,14 +10,12 @@
 #include "G4UnitsTable.hh"
 #include "G4SystemOfUnits.hh"
 
-namespace B3a
-{
-  EventAction::EventAction(RunAction* runAction) : fRunAction(runAction)
-  {}
 
-  void EventAction::BeginOfEventAction(const G4Event* /*evt*/)
-  {}
+EventAction::EventAction(RunAction* runAction) : fRunAction(runAction)
+{}
 
-  void EventAction::EndOfEventAction(const G4Event* evt )
-  {}
-}
+void EventAction::BeginOfEventAction(const G4Event* /*evt*/)
+{}
+
+void EventAction::EndOfEventAction(const G4Event* evt )
+{}

@@ -19,8 +19,8 @@
 
 int main(int argc,char** argv)
 {
-  G4int precision = 4;
-  G4SteppingVerbose::UseBestUnit(precision);
+  //G4int precision = 4;
+  //G4SteppingVerbose::UseBestUnit(precision);
 
   //auto runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Default);
 
@@ -30,9 +30,9 @@ int main(int argc,char** argv)
       	G4RunManager* runManager = new G4RunManager;
   #endif
 
-  runManager->SetUserInitialization(new B3::DetectorConstruction);
-  runManager->SetUserInitialization(new B3::PhysicsList);
-  runManager->SetUserInitialization(new B3a::ActionInitialization());
+  runManager->SetUserInitialization(new DetectorConstruction);
+  runManager->SetUserInitialization(new PhysicsList);
+  runManager->SetUserInitialization(new ActionInitialization());
   runManager->Initialize();
 
   G4UIExecutive* ui = nullptr;
@@ -45,9 +45,9 @@ int main(int argc,char** argv)
   auto UImanager = G4UImanager::GetUIpointer();
 
   // Activate score ntuple writer
-  G4TScoreNtupleWriter<G4AnalysisManager> scoreNtupleWriter;
-  scoreNtupleWriter.SetVerboseLevel(1);
-  scoreNtupleWriter.SetNtupleMerging(true);
+  //G4TScoreNtupleWriter<G4AnalysisManager> scoreNtupleWriter;
+  //scoreNtupleWriter.SetVerboseLevel(1);
+  //scoreNtupleWriter.SetNtupleMerging(true);
 
   if (ui) {
     UImanager->ApplyCommand("/control/execute init_vis.mac");

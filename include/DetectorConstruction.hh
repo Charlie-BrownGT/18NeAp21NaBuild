@@ -1,5 +1,5 @@
-#ifndef B3DetectorConstruction_h
-#define B3DetectorConstruction_h 1
+#ifndef DETECTORCONSTRUCTION_HH
+#define DETECTORCONSTRUCTION_HH
 
 #include "G4VUserDetectorConstruction.hh"
 #include "globals.hh"
@@ -26,27 +26,25 @@
 class G4VPhysicalVolume;
 class G4LogicalVolume;
 
-namespace B3
+class DetectorConstruction : public G4VUserDetectorConstruction
 {
-  class DetectorConstruction : public G4VUserDetectorConstruction
-  {
-    public:
-      DetectorConstruction();
-      ~DetectorConstruction() override = default;
+  public:
+    DetectorConstruction();
+    ~DetectorConstruction() override = default;
 
-    public:
-      G4VPhysicalVolume* Construct() override;
-      void ConstructSDandField() override;
+  public:
+    G4VPhysicalVolume* Construct() override;
+    void ConstructSDandField() override;
 
-    private:
-      void DefineMaterials();
+  private:
+    void DefineMaterials();
 
-      G4Material *vacuum, *CF4, *LiTarget, *YAPCe;
-      G4Element *Li, *Y, *Ce, *Al, *O, *C, *F;
+    G4Material *vacuum, *CF4, *LiTarget, *YAPCe;
+    G4Element *Li, *Y, *Ce, *Al, *O, *C, *F;
 
-      G4bool fCheckOverlaps = true;
+    G4bool fCheckOverlaps = true;
 
-      G4LogicalVolume *logicCryst, *logicID;
-  };
-}
+    G4LogicalVolume *logicCryst, *logicID;
+};
+
 #endif

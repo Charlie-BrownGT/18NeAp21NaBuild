@@ -3,18 +3,17 @@
 #include "G4Track.hh"
 #include "G4NeutrinoE.hh"
 
-namespace B3
+
+
+G4ClassificationOfNewTrack
+StackingAction::ClassifyNewTrack(const G4Track* track)
 {
+  //keep primary particle
+  if (track->GetParentID() == 0) return fUrgent;
 
-  G4ClassificationOfNewTrack
-  StackingAction::ClassifyNewTrack(const G4Track* track)
-  {
-    //keep primary particle
-    if (track->GetParentID() == 0) return fUrgent;
-
-    //kill secondary neutrino
-    if (track->GetDefinition() == G4NeutrinoE::NeutrinoE()) return fKill;
-    else return fUrgent;
-  }
+  //kill secondary neutrino
+  if (track->GetDefinition() == G4NeutrinoE::NeutrinoE()) return fKill;
+  else return fUrgent;
 }
+
 

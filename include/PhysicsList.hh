@@ -16,16 +16,15 @@
 #include "G4IonElasticPhysics.hh"
 #include "G4IonPhysicsXS.hh"
 
-namespace B3
-{
-  class PhysicsList: public G4VModularPhysicsList
-  {
-  public:
-    PhysicsList();
-    ~PhysicsList() override = default;
 
-    void SetCuts() override;
-  };
-}
+class PhysicsList: public G4VModularPhysicsList
+{
+public:
+  PhysicsList();
+  ~PhysicsList() override = default;
+
+  void SetCuts() override;
+};
+
 #endif
 
