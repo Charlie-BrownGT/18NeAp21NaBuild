@@ -5,8 +5,6 @@
 /gps/pos/centre 0 0 0 
 
 
-# use there variables to changes the angular beam spread
-
 # set beam qualities, option left in for a circular beam origin type
 /gps/pos/type Surface
 /gps/pos/shape Circle
@@ -28,3 +26,4 @@
 # the beam is travelling along the Z_axis with 3 degrees dispersion
 /gps/ang/rot1 0 1 0
 /gps/ang/rot2 1 0 0
+

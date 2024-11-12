@@ -1076,6 +1076,10 @@ CMakeFiles/sim.dir/sim.cc.o: ../sim.cc \
   /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4GeneralParticleSourceMessenger.hh \
   /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4GeneralParticleSourceData.hh \
   /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ParticleTable.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Event.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4IonTable.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ParticleDefinition.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ChargedGeantino.hh \
   ../include/StackingAction.hh \
   /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UserStackingAction.hh
 
@@ -1603,9 +1607,134 @@ CMakeFiles/sim.dir/src/ActionInitialization.cc.o: ../src/ActionInitialization.cc
   /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ParticleTable.hh \
   /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ParticleTableIterator.hh \
   /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ParticleTable.icc \
-  ../include/StackingAction.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4RunManager.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4EventManager.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4StackManager.hh \
   /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UserStackingAction.hh \
-  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ClassificationOfNewTrack.hh
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ClassificationOfNewTrack.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4StackedTrack.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4TrackStack.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4SmartTrackStack.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4SubEventTrackStack.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4SubEvent.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Track.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/trkdefs.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4DynamicParticle.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ElectronOccupancy.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4LorentzVector.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4DynamicParticle.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4TrackStatus.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VUserTrackInformation.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4PhysicsModelCatalog.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Material.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Element.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ElementTable.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ElementVector.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4IonisParamElm.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Isotope.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4IsotopeVector.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4IonisParamMat.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4DensityEffectCalculator.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4MaterialPropertiesTable.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4MaterialPropertiesIndex.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4MaterialPropertyVector.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4MaterialTable.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4SandiaTable.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4OrderedTable.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4DataVector.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4DataVector.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Track.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Step.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4StepPoint.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4SteppingControl.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4StepStatus.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4StepPoint.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4TrackVector.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Step.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4PrimaryTransformer.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ParticleTable.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4TrackingManager.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4SteppingManager.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4NoProcess.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VProcess.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/Randomize.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/Randomize.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/DualRand.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandomEngine.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandomEngine.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/JamesRandom.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/MixMaxRng.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/MTwistEngine.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RanecuEngine.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RanluxEngine.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/Ranlux64Engine.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RanluxppEngine.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RanshiEngine.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandBinomial.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/Random.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/Random.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Utility/memory.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandBinomial.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandBreitWigner.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandFlat.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Utility/thread_local.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandFlat.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandBreitWigner.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandChiSquare.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandChiSquare.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandExponential.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandExponential.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandExpZiggurat.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandBit.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandBit.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandGamma.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandGamma.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandGauss.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandGauss.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandGaussQ.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandGaussQ.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandGaussZiggurat.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandGeneral.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandGeneral.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandLandau.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandLandau.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandPoissonQ.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandPoisson.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandPoisson.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandPoissonQ.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandStudentT.h \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/CLHEP/Random/RandStudentT.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4PhysicsTable.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4PhysicsTable.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VParticleChange.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VParticleChange.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ForceCondition.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4GPILSelection.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ParticleChange.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ParticleChange.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ProcessType.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ProcessManager.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ProcessVector.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ProcessVector.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ProcessManager.icc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UserSteppingAction.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VSteppingVerbose.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/trkgdefs.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4TrackingMessenger.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UserTrackingAction.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4RunManagerKernel.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/rundefs.hh \
+  /usr/include/c++/11/list \
+  /usr/include/c++/11/bits/stl_list.h \
+  /usr/include/c++/11/bits/list.tcc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Event.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4IonTable.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Ions.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ParticleDefinition.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ChargedGeantino.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/Randomize.hh \
+  ../include/StackingAction.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4UserStackingAction.hh
 
 CMakeFiles/sim.dir/src/Detector.cc.o: ../src/Detector.cc \
   /usr/include/stdc-predef.h \
@@ -5458,6 +5587,12 @@ CMakeFiles/sim.dir/src/RunAction.cc.o: ../src/RunAction.cc \
   /usr/include/c++/11/list \
   /usr/include/c++/11/bits/stl_list.h \
   /usr/include/c++/11/bits/list.tcc \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Event.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4IonTable.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Ions.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ParticleDefinition.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4ChargedGeantino.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/Randomize.hh \
   /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4AccumulableManager.hh \
   /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Accumulable.hh \
   /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4AccumulableManager.icc \
