@@ -1,5 +1,5 @@
-#ifndef B3aActionInitialization_h
-#define B3aActionInitialization_h 1
+#ifndef ACTIONINITIALIZATION_HH
+#define ACTIONINITIALIZATION_HH
 
 #include "G4VUserActionInitialization.hh"
 

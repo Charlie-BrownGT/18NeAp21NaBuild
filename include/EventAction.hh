@@ -1,5 +1,5 @@
-#ifndef B3aEventAction_h
-#define B3aEventAction_h 1
+#ifndef EVENTACTION_HH
+#define EVENTACTION_HH
 
 #include "G4UserEventAction.hh"
 #include "globals.hh"

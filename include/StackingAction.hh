@@ -1,5 +1,5 @@
-#ifndef B3StackingAction_h
-#define B3StackingAction_h 1
+#ifndef STACKINGACTION_HH
+#define STACKINGACTION_HH
 
 #include "G4UserStackingAction.hh"
 #include "globals.hh"

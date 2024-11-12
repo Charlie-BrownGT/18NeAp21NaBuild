@@ -19,11 +19,6 @@
 
 int main(int argc,char** argv)
 {
-  //G4int precision = 4;
-  //G4SteppingVerbose::UseBestUnit(precision);
-
-  //auto runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Default);
-
   #ifdef G4MULTITHREADED
       	G4MTRunManager* runManager = new G4MTRunManager;
   #else
@@ -36,6 +31,7 @@ int main(int argc,char** argv)
   runManager->Initialize();
 
   G4UIExecutive* ui = nullptr;
+  
   if ( argc == 1 ) { 
     ui = new G4UIExecutive(argc, argv);
   }

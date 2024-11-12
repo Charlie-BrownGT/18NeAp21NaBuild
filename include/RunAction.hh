@@ -1,5 +1,5 @@
-#ifndef B3aRunAction_h
-#define B3aRunAction_h 1
+#ifndef RUNACTION_HH
+#define RUNACTION_HH
 
 #include "G4UserRunAction.hh"
 #include "G4Accumulable.hh"
