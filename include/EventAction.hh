@@ -23,5 +23,4 @@ class EventAction : public G4UserEventAction
   private:
     RunAction* fRunAction = nullptr;
 };
-
 #endif

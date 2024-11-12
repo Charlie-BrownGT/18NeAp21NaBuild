@@ -20,6 +20,5 @@ class RunAction : public G4UserRunAction
 
 private:
 };
-
 #endif
 

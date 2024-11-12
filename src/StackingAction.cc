@@ -15,5 +15,3 @@ StackingAction::ClassifyNewTrack(const G4Track* track)
   if (track->GetDefinition() == G4NeutrinoE::NeutrinoE()) return fKill;
   else return fUrgent;
 }
-
-

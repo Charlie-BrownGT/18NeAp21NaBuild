@@ -10,9 +10,9 @@ G4bool Detector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhist)
 {
 	G4Track *track = aStep->GetTrack();
 	track->SetTrackStatus(fStopAndKill);
-	
+
 	G4StepPoint *preStepPoint = aStep->GetPreStepPoint();
-	
+
 	G4ThreeVector posIon = preStepPoint->GetPosition();
 	//G4cout << "Ion position: " << posIon << G4endl;
 
@@ -32,7 +32,7 @@ G4bool Detector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhist)
 	man->FillNtupleDColumn(2, 0, totalEnergy);
 	man->AddNtupleRow(2);
 
-	
+
 	if(posIon[2] < 1.05*m){
 		man->FillNtupleDColumn(3, 0, totalEnergy);
 		man->AddNtupleRow(3);
@@ -42,7 +42,7 @@ G4bool Detector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhist)
 		man->FillNtupleDColumn(4, 0, totalEnergy);
 		man->AddNtupleRow(4);
 	}
-	
+
 
 	return true;
 }

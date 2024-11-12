@@ -46,5 +46,4 @@ class DetectorConstruction : public G4VUserDetectorConstruction
 
     G4LogicalVolume *logicCryst, *logicID;
 };
-
 #endif

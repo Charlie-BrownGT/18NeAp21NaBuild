@@ -16,5 +16,4 @@ class StackingAction : public G4UserStackingAction
 
     G4ClassificationOfNewTrack ClassifyNewTrack(const G4Track*) override;
 };
-
 #endif

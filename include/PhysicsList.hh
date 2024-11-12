@@ -25,6 +25,5 @@ public:
 
   void SetCuts() override;
 };
-
 #endif
 
