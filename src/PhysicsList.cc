@@ -1,7 +1,5 @@
 #include "PhysicsList.hh"
 
-
-
 PhysicsList::PhysicsList()
 {
   SetVerboseLevel(1);
@@ -10,10 +8,10 @@ PhysicsList::PhysicsList()
   RegisterPhysics(new G4EmStandardPhysics());
   RegisterPhysics(new G4RadioactiveDecayPhysics());
 
-  //RegisterPhysics (new G4HadronElasticPhysicsXS());
-  //RegisterPhysics (new G4HadronPhysicsQGSP_BIC_HP());
-  //RegisterPhysics (new G4IonElasticPhysics());
-  //RegisterPhysics (new G4IonPhysicsXS());
+  RegisterPhysics (new G4HadronElasticPhysicsXS());
+  RegisterPhysics (new G4HadronPhysicsQGSP_BIC_HP());
+  RegisterPhysics (new G4IonElasticPhysics());
+  RegisterPhysics (new G4IonPhysicsXS());
 }
 
 void PhysicsList::SetCuts()

@@ -7,7 +7,6 @@
 #include "G4UnitsTable.hh"
 #include "G4SystemOfUnits.hh"
 
-
 RunAction::RunAction()
 {
   G4AnalysisManager *man = G4AnalysisManager::Instance();
