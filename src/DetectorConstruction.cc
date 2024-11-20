@@ -55,12 +55,29 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   logicCryst = new G4LogicalVolume(solidCryst, YAPCe, "CrystalLV");
   new G4PVPlacement(nullptr, crystPos, logicCryst, "crystal", logicWorld, false, 0, fCheckOverlaps);
 
-  // patient, used as a detector later
+  /*
   G4double IDinnerRadius = 0*cm, IDouterRadius = 90*cm, IDhz = 20*cm, IDstartAngle = 0.*deg, IDspanningAngle = 360.*deg;
   G4ThreeVector IDPos(0, 0, 1.25*m);
   auto solidID = new G4Tubs("ID", IDinnerRadius, IDouterRadius, IDhz, IDstartAngle, IDspanningAngle);
   logicID = new G4LogicalVolume(solidID, CF4, "IDLV");                                        
   new G4PVPlacement(nullptr, IDPos, logicID, "ID", logicWorld, false, 0, fCheckOverlaps);          
+  */
+
+  // Definitions for ID geometry 
+	G4double dx = 5.0 * cm;  // Half-length along X-axis
+	G4double dy = 20.0 * cm;  // Half-length along Y-axis
+	G4double dz = 20.0 * cm;  // Half-length along Z-axis
+	G4double alpha = 30. * deg;  // Angle between Y-axis and the Z-side
+	G4double theta = 0. * deg;  // Tilt of Z-axis relative to global Z
+	G4double phi = 0. * deg;    // Azimuthal angle of Z-axis relative to global X
+	G4RotationMatrix* rotation = new G4RotationMatrix();
+	rotation->rotateY(90*deg);
+	G4ThreeVector IDposition = G4ThreeVector(0, 0, 130*cm);
+
+  G4Para* solidID = new G4Para("MyPara", dx, dy, dz, alpha, theta, phi);
+	G4LogicalVolume* logicID = new G4LogicalVolume(solidID, CF4, "logicID");
+	new G4PVPlacement(rotation, IDposition, logicID, "physID", logicWorld, false, 0, true);
+
 
   // Print materials
   G4cout << *(G4Material::GetMaterialTable()) << G4endl;
@@ -73,8 +90,8 @@ void DetectorConstruction::ConstructSDandField()
   Detector *Cryst = new Detector("Cryst");
   logicCryst->SetSensitiveDetector(Cryst);
 
-  Detector *ID = new Detector("ID");
-  logicID->SetSensitiveDetector(ID);
+  //Detector *ID = new Detector("ID");
+  //logicID->SetSensitiveDetector(ID);
 
   //G4SDManager::GetSDMpointer()->SetVerboseLevel(1);
   /*

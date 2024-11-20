@@ -19,6 +19,7 @@
 #include "G4VisAttributes.hh"
 #include "G4PhysicalConstants.hh"
 #include "G4SystemOfUnits.hh"
+#include "G4Para.hh"
 
 #include "Detector.hh"
 //#include "detector.hh"

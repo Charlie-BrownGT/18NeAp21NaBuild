@@ -848,6 +848,7 @@ CMakeFiles/sim.dir/sim.cc.o: ../sim.cc \
   /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VisAttributes.hh \
   /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4PhysicalConstants.hh \
   /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4SystemOfUnits.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Para.hh \
   ../include/Detector.hh \
   /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VSensitiveDetector.hh \
   /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Run.hh \
@@ -2834,6 +2835,8 @@ CMakeFiles/sim.dir/src/DetectorConstruction.cc.o: ../src/DetectorConstruction.cc
   /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VisAttributes.icc \
   /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4PhysicalConstants.hh \
   /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4SystemOfUnits.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Para.hh \
+  /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4Para.icc \
   ../include/Detector.hh \
   /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4VSensitiveDetector.hh \
   /home/guy/software/geant4/geant4-v11.2.2-gdml-mt-install/include/Geant4/G4AnalysisManager.hh \
