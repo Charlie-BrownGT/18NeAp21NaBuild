@@ -38,30 +38,23 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 {
   G4NistManager* nist = G4NistManager::Instance();
 
-  auto solidWorld = new G4Box("World", 1.*m, 1.*m, 3.*m);
-  auto logicWorld = new G4LogicalVolume(solidWorld, vacuum, "World");
-  auto physWorld = new G4PVPlacement(nullptr, G4ThreeVector(), logicWorld, "World", nullptr, false, 0, fCheckOverlaps);                          
+  solidWorld = new G4Box("World", 1.*m, 1.*m, 3.*m);
+  logicWorld = new G4LogicalVolume(solidWorld, vacuum, "World");
+  physWorld = new G4PVPlacement(nullptr, G4ThreeVector(), logicWorld, "World", nullptr, false, 0, fCheckOverlaps);                          
 
   // define lithium target
   G4double TinnerRadius = 0*cm, TouterRadius = 5*cm, Thz = 10.*um, TstartAngle = 0.*deg, TspanningAngle = 360.*deg;
   G4ThreeVector targetPos(0, 0, 0);
-  auto solidTarget = new G4Tubs("ID", TinnerRadius, TouterRadius, Thz, TstartAngle, TspanningAngle);
-  auto logicTarget = new G4LogicalVolume(solidTarget, LiTarget, "LiTarget");
-  new G4PVPlacement(nullptr, targetPos, logicTarget, "target", logicWorld, false, 0, fCheckOverlaps);
+
+  solidTarget = new G4Tubs("ID", TinnerRadius, TouterRadius, Thz, TstartAngle, TspanningAngle);
+  logicTarget = new G4LogicalVolume(solidTarget, LiTarget, "LiTarget");
+  physTarget = new G4PVPlacement(nullptr, targetPos, logicTarget, "target", logicWorld, false, 0, fCheckOverlaps);
 
   // define crystal, used as a detector later
   G4ThreeVector crystPos(0, 0, 1.*m);
-  auto solidCryst = new G4Box("crystal", 1.*cm, 1.*cm, 0.005*mm);
+  solidCryst = new G4Box("crystal", 1.*cm, 1.*cm, 0.005*mm);
   logicCryst = new G4LogicalVolume(solidCryst, YAPCe, "CrystalLV");
-  new G4PVPlacement(nullptr, crystPos, logicCryst, "crystal", logicWorld, false, 0, fCheckOverlaps);
-
-  /*
-  G4double IDinnerRadius = 0*cm, IDouterRadius = 90*cm, IDhz = 20*cm, IDstartAngle = 0.*deg, IDspanningAngle = 360.*deg;
-  G4ThreeVector IDPos(0, 0, 1.25*m);
-  auto solidID = new G4Tubs("ID", IDinnerRadius, IDouterRadius, IDhz, IDstartAngle, IDspanningAngle);
-  logicID = new G4LogicalVolume(solidID, CF4, "IDLV");                                        
-  new G4PVPlacement(nullptr, IDPos, logicID, "ID", logicWorld, false, 0, fCheckOverlaps);          
-  */
+  physCryst = new G4PVPlacement(nullptr, crystPos, logicCryst, "crystal", logicWorld, false, 0, fCheckOverlaps);
 
   // Definitions for ID geometry 
 	G4double dx = 5.0 * cm;  // Half-length along X-axis
@@ -74,13 +67,20 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 	rotation->rotateY(90*deg);
 	G4ThreeVector IDposition = G4ThreeVector(0, 0, 130*cm);
 
-  G4Para* solidID = new G4Para("MyPara", dx, dy, dz, alpha, theta, phi);
-	G4LogicalVolume* logicID = new G4LogicalVolume(solidID, CF4, "logicID");
-	new G4PVPlacement(rotation, IDposition, logicID, "physID", logicWorld, false, 0, true);
+  solidID = new G4Para("MyPara", dx, dy, dz, alpha, theta, phi);
+	logicID = new G4LogicalVolume(solidID, CF4, "logicID");
+	physID = new G4PVPlacement(rotation, IDposition, logicID, "physID", logicWorld, false, 0, true);
 
+   /*
+  G4double IDinnerRadius = 0*cm, IDouterRadius = 90*cm, IDhz = 20*cm, IDstartAngle = 0.*deg, IDspanningAngle = 360.*deg;
+  G4ThreeVector IDPos(0, 0, 1.25*m);
+  auto solidID = new G4Tubs("ID", IDinnerRadius, IDouterRadius, IDhz, IDstartAngle, IDspanningAngle);
+  logicID = new G4LogicalVolume(solidID, CF4, "IDLV");                                        
+  new G4PVPlacement(nullptr, IDPos, logicID, "ID", logicWorld, false, 0, fCheckOverlaps);          
+  */
 
   // Print materials
-  G4cout << *(G4Material::GetMaterialTable()) << G4endl;
+  //G4cout << *(G4Material::GetMaterialTable()) << G4endl;
 
   return physWorld;
 }
@@ -90,8 +90,8 @@ void DetectorConstruction::ConstructSDandField()
   Detector *Cryst = new Detector("Cryst");
   logicCryst->SetSensitiveDetector(Cryst);
 
-  //Detector *ID = new Detector("ID");
-  //logicID->SetSensitiveDetector(ID);
+  Detector *ID = new Detector("ID");
+  logicID->SetSensitiveDetector(ID);
 
   //G4SDManager::GetSDMpointer()->SetVerboseLevel(1);
   /*

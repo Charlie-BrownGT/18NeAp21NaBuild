@@ -39,12 +39,19 @@ class DetectorConstruction : public G4VUserDetectorConstruction
 
   private:
     void DefineMaterials();
+    G4bool fCheckOverlaps = true;
 
     G4Material *vacuum, *CF4, *LiTarget, *YAPCe;
     G4Element *Li, *Y, *Ce, *Al, *O, *C, *F;
 
-    G4bool fCheckOverlaps = true;
+    G4Box *solidWorld, *solidCryst;
+    G4Tubs *solidTarget;
+    G4Para *solidID;
 
-    G4LogicalVolume *logicCryst, *logicID;
+    G4LogicalVolume *logicWorld, *logicTarget, *logicID, *logicCryst;
+    G4VPhysicalVolume *physWorld, *physTarget, *physID, *physCryst;
+
+    //G4LogicalVolume *logicCryst, *logicID;
+    
 };
 #endif

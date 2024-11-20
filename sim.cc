@@ -42,8 +42,8 @@ int main(int argc,char** argv)
 
   // Activate score ntuple writer
   G4TScoreNtupleWriter<G4AnalysisManager> scoreNtupleWriter;
-  scoreNtupleWriter.SetVerboseLevel(1);
-  scoreNtupleWriter.SetNtupleMerging(true);
+  //scoreNtupleWriter.SetVerboseLevel(1);
+  //scoreNtupleWriter.SetNtupleMerging(true);
 
   if (ui) {
     UImanager->ApplyCommand("/control/execute init_vis.mac");

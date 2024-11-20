@@ -29,6 +29,8 @@ G4bool Detector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhist)
 	man->FillNtupleDColumn(0, 3, posIon[2]);
 	man->AddNtupleRow(0);
 
+	G4cout << posIon[2] << G4endl;
+
 	man->FillNtupleDColumn(2, 0, totalEnergy);
 	man->AddNtupleRow(2);
 
@@ -38,7 +40,7 @@ G4bool Detector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhist)
 		man->AddNtupleRow(3);
 	}
 
-	if(posIon[2] > 1.05*m){
+	else if(posIon[2] > 1.05*m){
 		man->FillNtupleDColumn(4, 0, totalEnergy);
 		man->AddNtupleRow(4);
 	}
