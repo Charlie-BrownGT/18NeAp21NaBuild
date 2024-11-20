@@ -43,7 +43,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   physWorld = new G4PVPlacement(nullptr, G4ThreeVector(), logicWorld, "World", nullptr, false, 0, fCheckOverlaps);                          
 
   // define lithium target
-  G4double TinnerRadius = 0*cm, TouterRadius = 5*cm, Thz = 10.*um, TstartAngle = 0.*deg, TspanningAngle = 360.*deg;
+  G4double TinnerRadius = 0*cm, TouterRadius = 5*cm, Thz = 25.*um, TstartAngle = 0.*deg, TspanningAngle = 360.*deg;
   G4ThreeVector targetPos(0, 0, 0);
 
   solidTarget = new G4Tubs("ID", TinnerRadius, TouterRadius, Thz, TstartAngle, TspanningAngle);
@@ -71,14 +71,6 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
 	logicID = new G4LogicalVolume(solidID, CF4, "logicID");
 	physID = new G4PVPlacement(rotation, IDposition, logicID, "physID", logicWorld, false, 0, true);
 
-   /*
-  G4double IDinnerRadius = 0*cm, IDouterRadius = 90*cm, IDhz = 20*cm, IDstartAngle = 0.*deg, IDspanningAngle = 360.*deg;
-  G4ThreeVector IDPos(0, 0, 1.25*m);
-  auto solidID = new G4Tubs("ID", IDinnerRadius, IDouterRadius, IDhz, IDstartAngle, IDspanningAngle);
-  logicID = new G4LogicalVolume(solidID, CF4, "IDLV");                                        
-  new G4PVPlacement(nullptr, IDPos, logicID, "ID", logicWorld, false, 0, fCheckOverlaps);          
-  */
-
   // Print materials
   //G4cout << *(G4Material::GetMaterialTable()) << G4endl;
 
@@ -92,23 +84,6 @@ void DetectorConstruction::ConstructSDandField()
 
   Detector *ID = new Detector("ID");
   logicID->SetSensitiveDetector(ID);
-
-  //G4SDManager::GetSDMpointer()->SetVerboseLevel(1);
-  /*
-  // declare crystal as a MultiFunctionalDetector scorer
-  auto cryst = new G4MultiFunctionalDetector("crystal");
-  G4SDManager::GetSDMpointer()->AddNewDetector(cryst);
-  G4VPrimitiveScorer* primitiv1 = new G4PSEnergyDeposit("crystEdep");
-  cryst->RegisterPrimitive(primitiv1);
-  SetSensitiveDetector("CrystalLV",cryst);
-
-  // declare IonDet as a MultiFunctionalDetector scorer
-  auto IonDet = new G4MultiFunctionalDetector("IonDet");
-  G4SDManager::GetSDMpointer()->AddNewDetector(IonDet);
-  G4VPrimitiveScorer* primitiv2 = new G4PSEnergyDeposit("IDEdep");
-  IonDet->RegisterPrimitive(primitiv2);
-  SetSensitiveDetector("IDLV",IonDet);
-  */
 }
 
 

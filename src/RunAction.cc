@@ -26,19 +26,19 @@ RunAction::RunAction()
   man->CreateNtupleDColumn("TotalEnergy");
   man->FinishNtuple(2);
 
-  man->CreateNtuple("CrystalEnergy", "CrystalEnergy");
-  man->CreateNtupleDColumn("Energy");
+  man->CreateNtuple("ReactedEnergies", "ReactedEnergies");
+  man->CreateNtupleDColumn("ReactedEnergies");
   man->FinishNtuple(3);
 
-  man->CreateNtuple("IDEnergy", "IDEnergy");
-  man->CreateNtupleDColumn("Energy");
+  man->CreateNtuple("UnreactedEnergies", "UnreactedEnergies");
+  man->CreateNtupleDColumn("UnreactedEnergies");
   man->FinishNtuple(4);
 }
 
 void RunAction::BeginOfRunAction(const G4Run* run)
 {
   G4AnalysisManager *man = G4AnalysisManager::Instance();
-  man->OpenFile("test.root");
+  man->OpenFile("output.root");
 }
 
 void RunAction::EndOfRunAction(const G4Run* run)
