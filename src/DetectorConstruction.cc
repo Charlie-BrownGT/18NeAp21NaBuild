@@ -43,7 +43,7 @@ G4VPhysicalVolume* DetectorConstruction::Construct()
   physWorld = new G4PVPlacement(nullptr, G4ThreeVector(), logicWorld, "World", nullptr, false, 0, fCheckOverlaps);                          
 
   // define lithium target
-  G4double TinnerRadius = 0*cm, TouterRadius = 5*cm, Thz = 25.*um, TstartAngle = 0.*deg, TspanningAngle = 360.*deg;
+  G4double TinnerRadius = 0*cm, TouterRadius = 5*cm, Thz = 5.*um, TstartAngle = 0.*deg, TspanningAngle = 360.*deg;
   G4ThreeVector targetPos(0, 0, 0);
 
   solidTarget = new G4Tubs("ID", TinnerRadius, TouterRadius, Thz, TstartAngle, TspanningAngle);
